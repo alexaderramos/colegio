@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>IEP-ASIS</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../../../css/horizontal-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+        <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+            <div class="container">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="../index.html"><img src="../images/logo.svg"
+                            alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.svg"
+                            alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                   
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                                id="messageDropdown" href="#" data-toggle="dropdown">
+                                <i class="mdi mdi-email-outline mx-0"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="messageDropdown">
+                                <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face4.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            The meeting is cancelled
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            New product launch
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face3.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            Upcoming board meeting
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                                id="notificationDropdown" href="#" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline mx-0"></i>
+                                <span class="count"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="notificationDropdown">
+                                <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-success">
+                                            <i class="mdi mdi-information mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            Just now
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-warning">
+                                            <i class="mdi mdi-settings mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            Private message
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-info">
+                                            <i class="mdi mdi-account-box mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            2 days ago
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-profile dropdown">
+                            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                                <img src="../images/faces/face5.jpg" alt="profile" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                                aria-labelledby="profileDropdown">
+                                <a class="dropdown-item" href="../index.html">
+                                    <i class="mdi mdi-logout"></i>
+                                    Salir
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                        data-toggle="horizontal-menu-toggle">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <nav class="bottom-navbar">
+            <div class="container">
+                <ul class="nav page-navigation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                            <span class="menu-title">Principal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mega-menu">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-airplay menu-icon"></i>
+                            <span class="menu-title">Gestion</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <div class="col-group-wrapper row">
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Matriculas</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../matriculas/index.html">Ver
+                                                Todas</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="../matriculas/new.html">Registrar Matricula</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="../matriculas/edit.html">Editar Matricula</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Semestre</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../semestres/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../semestres/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Cursos</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../cursos/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../cursos/">Registrar
+                                                Curso</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Talleres</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../talleres/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../talleres/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Grupos</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../grupos/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../grupos/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Horarios</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../horarios/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../horarios/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi mdi-account-card-details menu-icon"></i>
+                            <span class="menu-title">Usuarios</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../usuarios/">Ver Todos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                        Usuario</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                            Usuario</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+                            <span class="menu-title">Docentes</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../docentes/">Listar Docentes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../docentes/new.html">Agregar Nuevo</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="../docentes/edit.html">Editar Docente</a>
+                                    </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-android-studio menu-icon"></i>
+                            <span class="menu-title">Alumnos</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../alumnos/index.html">Listar Alumnos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../alumnos/new.html">Agregar Nuevo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../alumnos/edit.html">Editar Alumno</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <span class="menu-title">Reportes</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../reportes/alumnos-rp.html">Reporte Alumnos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../reportes/docentes-rp.html"> Reporte Docente</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="../soporte/" class="nav-link">
+                            <i class="mdi mdi-information-outline menu-icon"></i>
+                            <span class="menu-title">Soporte</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">TODOS LOS DOCENTES</h4>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table id="list-teacher" class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>DNI</th>
+                          <th>Apellidos</th>
+                          <th>Nombres</th>
+                          <th>Especialidad</th>
+                          <th>Telefono</th>
+                          <th>Estado</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>36194806</td>
+                          <td>Britt Kline</td>
+                          <td>Wendy</td>
+                          <td>Musica</td>
+                          <td>233-8124</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>33447164</td>
+                          <td>Santos Snider</td>
+                          <td>Bruno</td>
+                          <td>Musica</td>
+                          <td>543-0690</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>15545762</td>
+                          <td>Mejia Carrillo</td>
+                          <td>Amela</td>
+                          <td>Matematicas</td>
+                          <td>419-720-6626</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>71977951</td>
+                          <td>Thompson Durham</td>
+                          <td>Tasha</td>
+                          <td>Computacion</td>
+                          <td>892-373-1982</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>26831979</td>
+                          <td>Valentine Little</td>
+                          <td>Akeem</td>
+                          <td>Matematicas</td>
+                          <td>711-525-0987</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>36897620</td>
+                          <td>Olson Pugh</td>
+                          <td>Abel</td>
+                          <td>Fisica</td>
+                          <td>315-3596</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>39074076</td>
+                          <td>Shaw Mcintyre</td>
+                          <td>Hyacinth</td>
+                          <td>Computacion</td>
+                          <td>849-330-1573</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>76288081</td>
+                          <td>Burris Daniels</td>
+                          <td>Kirby</td>
+                          <td>Computacion</td>
+                          <td>156-2478</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>53325777</td>
+                          <td>Carroll Young</td>
+                          <td>Rana</td>
+                          <td>Ciencias</td>
+                          <td>785-8526</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>74855158</td>
+                          <td>Ray Rivas</td>
+                          <td>Noel</td>
+                          <td>Musica</td>
+                          <td>906-678-3743</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>55977366</td>
+                          <td>Daniels Burton</td>
+                          <td>Kaye</td>
+                          <td>Danzas</td>
+                          <td>221-5318</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>97691734</td>
+                          <td>Carson Wood</td>
+                          <td>Orson</td>
+                          <td>Matematicas</td>
+                          <td>449-7367</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>23291015</td>
+                          <td>Decker Russo</td>
+                          <td>Kareem</td>
+                          <td>Comunicacion</td>
+                          <td>700-166-8061</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td>10020141</td>
+                          <td>House Schneider</td>
+                          <td>Lacey</td>
+                          <td>Arte</td>
+                          <td>184-699-0343</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td>45435170</td>
+                          <td>Wade Marshall</td>
+                          <td>Aladdin</td>
+                          <td>Biologia</td>
+                          <td>156-7818</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td>46049251</td>
+                          <td>Goff Hernandez</td>
+                          <td>Idona</td>
+                          <td>Danzas</td>
+                          <td>257-439-9545</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>17</td>
+                          <td>57707059</td>
+                          <td>Mccormick Odom</td>
+                          <td>Dolan</td>
+                          <td>Arte</td>
+                          <td>448-654-0803</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td>14584769</td>
+                          <td>Austin Reynolds</td>
+                          <td>Zahir</td>
+                          <td>Matematicas</td>
+                          <td>919-5731</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td>35258272</td>
+                          <td>Bradshaw Garner</td>
+                          <td>Harlan</td>
+                          <td>Computacion</td>
+                          <td>809-8842</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>20</td>
+                          <td>27719583</td>
+                          <td>Knight Chan</td>
+                          <td>Whilemina</td>
+                          <td>Arte</td>
+                          <td>448-6585</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>21</td>
+                          <td>64115064</td>
+                          <td>Scott Suarez</td>
+                          <td>Luke</td>
+                          <td>Matematicas</td>
+                          <td>305-1632</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>22</td>
+                          <td>93050675</td>
+                          <td>Olson Holland</td>
+                          <td>Noble</td>
+                          <td>Musica</td>
+                          <td>377-6227</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>23</td>
+                          <td>28541657</td>
+                          <td>Ward Pate</td>
+                          <td>Stephen</td>
+                          <td>Biologia</td>
+                          <td>896-5306</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>24</td>
+                          <td>63492541</td>
+                          <td>Saunders Marquez</td>
+                          <td>Kenneth</td>
+                          <td>Danzas</td>
+                          <td>951-7295</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25</td>
+                          <td>44032061</td>
+                          <td>Valencia Jenkins</td>
+                          <td>Melyssa</td>
+                          <td>Ciencias</td>
+                          <td>252-811-9018</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>26</td>
+                          <td>10141979</td>
+                          <td>Curry Casey</td>
+                          <td>Kermit</td>
+                          <td>Ciencias</td>
+                          <td>268-0221</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>27</td>
+                          <td>58328330</td>
+                          <td>Hammond Ray</td>
+                          <td>Allegra</td>
+                          <td>Fisica</td>
+                          <td>156-3755</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>28</td>
+                          <td>23215756</td>
+                          <td>Scott Elliott</td>
+                          <td>Drake</td>
+                          <td>Ciencias</td>
+                          <td>212-2589</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>29</td>
+                          <td>32748434</td>
+                          <td>David Velasquez</td>
+                          <td>Lucius</td>
+                          <td>Arte</td>
+                          <td>325-4790</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>30</td>
+                          <td>19791797</td>
+                          <td>Stein Sloan</td>
+                          <td>Harper</td>
+                          <td>Matematicas</td>
+                          <td>786-258-9912</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>31</td>
+                          <td>98152442</td>
+                          <td>Bryan Wilkins</td>
+                          <td>Wade</td>
+                          <td>Ciencias</td>
+                          <td>673-874-1104</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>32</td>
+                          <td>36431038</td>
+                          <td>Delgado Hardy</td>
+                          <td>Graham</td>
+                          <td>Ciencias</td>
+                          <td>182-369-7707</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>33</td>
+                          <td>95832117</td>
+                          <td>Kemp Robinson</td>
+                          <td>Wade</td>
+                          <td>Ciencias</td>
+                          <td>997-444-0075</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>34</td>
+                          <td>60168484</td>
+                          <td>Witt Dean</td>
+                          <td>Charde</td>
+                          <td>Ciencias</td>
+                          <td>797-7046</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>35</td>
+                          <td>29012673</td>
+                          <td>Moreno Wiggins</td>
+                          <td>Amal</td>
+                          <td>Musica</td>
+                          <td>229-5635</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>36</td>
+                          <td>19333683</td>
+                          <td>Gillespie Bishop</td>
+                          <td>William</td>
+                          <td>Biologia</td>
+                          <td>470-3750</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>37</td>
+                          <td>71823629</td>
+                          <td>Merritt Berger</td>
+                          <td>Christopher</td>
+                          <td>Danzas</td>
+                          <td>333-1967</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>38</td>
+                          <td>34516499</td>
+                          <td>Bowman Stephenson</td>
+                          <td>Daphne</td>
+                          <td>Biologia</td>
+                          <td>337-156-4591</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>39</td>
+                          <td>87174038</td>
+                          <td>Macdonald Riddle</td>
+                          <td>Shay</td>
+                          <td>Matematicas</td>
+                          <td>844-942-9869</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>40</td>
+                          <td>13086763</td>
+                          <td>Hubbard Kennedy</td>
+                          <td>Oliver</td>
+                          <td>Ciencias</td>
+                          <td>154-781-1190</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>41</td>
+                          <td>46686345</td>
+                          <td>Simmons Osborn</td>
+                          <td>Catherine</td>
+                          <td>Matematicas</td>
+                          <td>959-7047</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>42</td>
+                          <td>40446757</td>
+                          <td>Potter Madden</td>
+                          <td>Cora</td>
+                          <td>Arte</td>
+                          <td>288-2521</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>43</td>
+                          <td>64491950</td>
+                          <td>Phillips Brock</td>
+                          <td>Kibo</td>
+                          <td>Biologia</td>
+                          <td>149-0542</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>44</td>
+                          <td>22956051</td>
+                          <td>Rasmussen Jennings</td>
+                          <td>Daphne</td>
+                          <td>Arte</td>
+                          <td>697-5207</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>45</td>
+                          <td>79588585</td>
+                          <td>Walton Jarvis</td>
+                          <td>Jordan</td>
+                          <td>Musica</td>
+                          <td>328-409-6181</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>46</td>
+                          <td>19612018</td>
+                          <td>Norman Leonard</td>
+                          <td>Rahim</td>
+                          <td>Ciencias</td>
+                          <td>816-5966</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>47</td>
+                          <td>80360527</td>
+                          <td>Hawkins Key</td>
+                          <td>Cullen</td>
+                          <td>Danzas</td>
+                          <td>375-496-3919</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>48</td>
+                          <td>91018255</td>
+                          <td>Gentry Mcgee</td>
+                          <td>Ursa</td>
+                          <td>Musica</td>
+                          <td>907-7193</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>49</td>
+                          <td>77511068</td>
+                          <td>Phillips Figueroa</td>
+                          <td>Silas</td>
+                          <td>Comunicacion</td>
+                          <td>133-909-8629</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>50</td>
+                          <td>99378916</td>
+                          <td>Burns Cameron</td>
+                          <td>Kyra</td>
+                          <td>Arte</td>
+                          <td>934-0273</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>51</td>
+                          <td>69120196</td>
+                          <td>Howell Hogan</td>
+                          <td>Matthew</td>
+                          <td>Arte</td>
+                          <td>291-0358</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>52</td>
+                          <td>59391377</td>
+                          <td>Tyler Slater</td>
+                          <td>Moana</td>
+                          <td>Ciencias</td>
+                          <td>564-149-0688</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>53</td>
+                          <td>96481422</td>
+                          <td>Rice Hutchinson</td>
+                          <td>Ursa</td>
+                          <td>Danzas</td>
+                          <td>738-4083</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>54</td>
+                          <td>65313343</td>
+                          <td>Chandler Goff</td>
+                          <td>Eaton</td>
+                          <td>Biologia</td>
+                          <td>117-3524</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>55</td>
+                          <td>36470047</td>
+                          <td>Hardin David</td>
+                          <td>Hedy</td>
+                          <td>Comunicacion</td>
+                          <td>948-126-6109</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>56</td>
+                          <td>69791838</td>
+                          <td>Byers Dixon</td>
+                          <td>Whitney</td>
+                          <td>Matematicas</td>
+                          <td>408-633-5699</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>57</td>
+                          <td>32031997</td>
+                          <td>Daniel Delaney</td>
+                          <td>Inez</td>
+                          <td>Musica</td>
+                          <td>747-3197</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>58</td>
+                          <td>13654150</td>
+                          <td>Gomez Baird</td>
+                          <td>Sara</td>
+                          <td>Matematicas</td>
+                          <td>280-314-3298</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>59</td>
+                          <td>21676789</td>
+                          <td>Kline Sparks</td>
+                          <td>Raymond</td>
+                          <td>Comunicacion</td>
+                          <td>171-0466</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>60</td>
+                          <td>93608711</td>
+                          <td>House Contreras</td>
+                          <td>Kuame</td>
+                          <td>Matematicas</td>
+                          <td>578-2500</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>61</td>
+                          <td>75470442</td>
+                          <td>Dunn Meyers</td>
+                          <td>Wade</td>
+                          <td>Arte</td>
+                          <td>397-192-7721</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>62</td>
+                          <td>47649592</td>
+                          <td>Case Bryan</td>
+                          <td>Alexa</td>
+                          <td>Danzas</td>
+                          <td>684-5843</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>63</td>
+                          <td>62811451</td>
+                          <td>Butler Finch</td>
+                          <td>Jane</td>
+                          <td>Musica</td>
+                          <td>277-5967</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>64</td>
+                          <td>55738604</td>
+                          <td>Nguyen Ray</td>
+                          <td>Hanae</td>
+                          <td>Matematicas</td>
+                          <td>605-385-4423</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>65</td>
+                          <td>25380922</td>
+                          <td>Nash Richards</td>
+                          <td>Yvonne</td>
+                          <td>Biologia</td>
+                          <td>588-559-7772</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>66</td>
+                          <td>41717538</td>
+                          <td>Fox Berg</td>
+                          <td>Jemima</td>
+                          <td>Ingles</td>
+                          <td>571-8380</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>67</td>
+                          <td>65795410</td>
+                          <td>Lynn Farrell</td>
+                          <td>Dalton</td>
+                          <td>Arte</td>
+                          <td>809-8398</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>68</td>
+                          <td>52920817</td>
+                          <td>Tanner Sweet</td>
+                          <td>Vincent</td>
+                          <td>Arte</td>
+                          <td>106-9642</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>69</td>
+                          <td>25353114</td>
+                          <td>Strickland Reynolds</td>
+                          <td>Kitra</td>
+                          <td>Danzas</td>
+                          <td>420-5089</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>70</td>
+                          <td>87542616</td>
+                          <td>Wagner Fowler</td>
+                          <td>Heidi</td>
+                          <td>Computacion</td>
+                          <td>526-714-5279</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>71</td>
+                          <td>17884891</td>
+                          <td>Barrera Compton</td>
+                          <td>Peter</td>
+                          <td>Danzas</td>
+                          <td>114-311-9620</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>72</td>
+                          <td>42709933</td>
+                          <td>Frazier Britt</td>
+                          <td>Oren</td>
+                          <td>Fisica</td>
+                          <td>545-252-8840</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>73</td>
+                          <td>27689420</td>
+                          <td>Swanson Cleveland</td>
+                          <td>MacKensie</td>
+                          <td>Computacion</td>
+                          <td>190-9982</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>74</td>
+                          <td>92434951</td>
+                          <td>Fisher Marquez</td>
+                          <td>Doris</td>
+                          <td>Computacion</td>
+                          <td>773-423-6303</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>75</td>
+                          <td>90229304</td>
+                          <td>Weiss Cohen</td>
+                          <td>Dacey</td>
+                          <td>Comunicacion</td>
+                          <td>194-6679</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>76</td>
+                          <td>29465140</td>
+                          <td>Cunningham Avila</td>
+                          <td>Alec</td>
+                          <td>Matematicas</td>
+                          <td>661-1822</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>77</td>
+                          <td>60268747</td>
+                          <td>Gallagher Shields</td>
+                          <td>Maxwell</td>
+                          <td>Computacion</td>
+                          <td>411-441-5518</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>78</td>
+                          <td>59260782</td>
+                          <td>Petersen Bird</td>
+                          <td>Brian</td>
+                          <td>Comunicacion</td>
+                          <td>327-8498</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>79</td>
+                          <td>33268719</td>
+                          <td>Bright Mcintosh</td>
+                          <td>Ignacia</td>
+                          <td>Ingles</td>
+                          <td>134-7801</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>80</td>
+                          <td>21406676</td>
+                          <td>Merritt Mcfarland</td>
+                          <td>Iliana</td>
+                          <td>Comunicacion</td>
+                          <td>418-475-9947</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>81</td>
+                          <td>49451986</td>
+                          <td>Lott Mccarty</td>
+                          <td>Zeus</td>
+                          <td>Computacion</td>
+                          <td>580-692-4838</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>82</td>
+                          <td>31232205</td>
+                          <td>Neal Burgess</td>
+                          <td>Xenos</td>
+                          <td>Danzas</td>
+                          <td>759-7138</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>83</td>
+                          <td>65517146</td>
+                          <td>Hanson Black</td>
+                          <td>Ulysses</td>
+                          <td>Ciencias</td>
+                          <td>578-6836</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>84</td>
+                          <td>11288865</td>
+                          <td>Patel Gallegos</td>
+                          <td>Yen</td>
+                          <td>Matematicas</td>
+                          <td>465-399-8337</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>85</td>
+                          <td>24539718</td>
+                          <td>Mcdonald Roy</td>
+                          <td>Ava</td>
+                          <td>Ciencias</td>
+                          <td>267-4968</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>86</td>
+                          <td>84378506</td>
+                          <td>Hinton Campbell</td>
+                          <td>Kerry</td>
+                          <td>Ingles</td>
+                          <td>551-243-3039</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>87</td>
+                          <td>96202414</td>
+                          <td>Ingram Odom</td>
+                          <td>Philip</td>
+                          <td>Computacion</td>
+                          <td>391-1203</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>88</td>
+                          <td>68049261</td>
+                          <td>Jackson Koch</td>
+                          <td>Dean</td>
+                          <td>Danzas</td>
+                          <td>884-1849</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>89</td>
+                          <td>42967868</td>
+                          <td>Hill Macdonald</td>
+                          <td>Cody</td>
+                          <td>Arte</td>
+                          <td>978-2581</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>90</td>
+                          <td>42765135</td>
+                          <td>Burt Morris</td>
+                          <td>Colorado</td>
+                          <td>Arte</td>
+                          <td>525-7838</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>91</td>
+                          <td>76540209</td>
+                          <td>Page Ramirez</td>
+                          <td>Whilemina</td>
+                          <td>Ciencias</td>
+                          <td>492-778-8218</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>92</td>
+                          <td>11684424</td>
+                          <td>Page Pope</td>
+                          <td>Blaze</td>
+                          <td>Arte</td>
+                          <td>978-275-5363</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>93</td>
+                          <td>87227823</td>
+                          <td>Mcclain Glenn</td>
+                          <td>Maris</td>
+                          <td>Arte</td>
+                          <td>819-6477</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>94</td>
+                          <td>15820934</td>
+                          <td>Osborn Clemons</td>
+                          <td>Talon</td>
+                          <td>Ciencias</td>
+                          <td>844-0801</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>95</td>
+                          <td>15488958</td>
+                          <td>Johnson Willis</td>
+                          <td>McKenzie</td>
+                          <td>Fisica</td>
+                          <td>843-900-5800</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>96</td>
+                          <td>72924280</td>
+                          <td>Hardy Juarez</td>
+                          <td>Cailin</td>
+                          <td>Biologia</td>
+                          <td>406-189-8139</td>
+                          <td><label class="badge badge-success">Habilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>97</td>
+                          <td>93897556</td>
+                          <td>Pittman Ashley</td>
+                          <td>Griffin</td>
+                          <td>Ciencias</td>
+                          <td>727-664-0030</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>98</td>
+                          <td>26162141</td>
+                          <td>Harrell Lane</td>
+                          <td>Reagan</td>
+                          <td>Danzas</td>
+                          <td>826-2765</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>99</td>
+                          <td>39777046</td>
+                          <td>White Walter</td>
+                          <td>Tasha</td>
+                          <td>Musica</td>
+                          <td>767-9344</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>100</td>
+                          <td>29551316</td>
+                          <td>Fuller Alford</td>
+                          <td>Elizabeth</td>
+                          <td>Matematicas</td>
+                          <td>265-1787</td>
+                          <td><label class="badge badge-danger">Deshabilitado</label></td>
+                          <td>
+                            <a href="show.html" class="btn btn-outline-primary">View</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer text-center">
+            <div class="w-100 clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a>Urbanui</a>. All rights reserved.</span>
+              <span class="d-none" >Theme Pro. License Estended by Alexander R.</span>
+            </div>
+          </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../../../js/off-canvas.js"></script>
+  <script src="../../../../js/hoverable-collapse.js"></script>
+  <script src="../../../../js/template.js"></script>
+  <script src="../../../../js/settings.js"></script>
+  <script src="../../../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="../../../../js/data-table.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+</html>

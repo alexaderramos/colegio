@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IEP-ASIS</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../../../css/horizontal-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../../../images/favicon.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_horizontal-navbar.html -->
+        <div class="horizontal-menu">
+                <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+                    <div class="container">
+                        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                            <a class="navbar-brand brand-logo" href="../index.html"><img src="../images/logo.svg"
+                                    alt="logo" /></a>
+                            <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.svg"
+                                    alt="logo" /></a>
+                        </div>
+                        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                           
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                                        id="messageDropdown" href="#" data-toggle="dropdown">
+                                        <i class="mdi mdi-email-outline mx-0"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                        aria-labelledby="messageDropdown">
+                                        <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="../images/faces/face4.jpg" alt="image" class="profile-pic">
+                                            </div>
+                                            <div class="preview-item-content flex-grow">
+                                                <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                                </h6>
+                                                <p class="font-weight-light small-text text-muted mb-0">
+                                                    The meeting is cancelled
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                                            </div>
+                                            <div class="preview-item-content flex-grow">
+                                                <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                                </h6>
+                                                <p class="font-weight-light small-text text-muted mb-0">
+                                                    New product launch
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="../images/faces/face3.jpg" alt="image" class="profile-pic">
+                                            </div>
+                                            <div class="preview-item-content flex-grow">
+                                                <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                                </h6>
+                                                <p class="font-weight-light small-text text-muted mb-0">
+                                                    Upcoming board meeting
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                                        id="notificationDropdown" href="#" data-toggle="dropdown">
+                                        <i class="mdi mdi-bell-outline mx-0"></i>
+                                        <span class="count"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                        aria-labelledby="notificationDropdown">
+                                        <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-success">
+                                                    <i class="mdi mdi-information mx-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                                <p class="font-weight-light small-text mb-0 text-muted">
+                                                    Just now
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-warning">
+                                                    <i class="mdi mdi-settings mx-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                                <p class="font-weight-light small-text mb-0 text-muted">
+                                                    Private message
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-info">
+                                                    <i class="mdi mdi-account-box mx-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                                <p class="font-weight-light small-text mb-0 text-muted">
+                                                    2 days ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-profile dropdown">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                                        <img src="../images/faces/face5.jpg" alt="profile" />
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                                        aria-labelledby="profileDropdown">
+                                        <a class="dropdown-item" href="../index.html">
+                                            <i class="mdi mdi-logout"></i>
+                                            Salir
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                                data-toggle="horizontal-menu-toggle">
+                                <span class="mdi mdi-menu"></span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="bottom-navbar">
+                    <div class="container">
+                        <ul class="nav page-navigation">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">
+                                    <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                                    <span class="menu-title">Principal</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mega-menu">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-airplay menu-icon"></i>
+                                    <span class="menu-title">Gestion</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <div class="col-group-wrapper row">
+                                        <div class="col-group col-md-2">
+                                            <p class="category-heading">Matriculas</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../matriculas/index.html">Ver
+                                                        Todas</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="../matriculas/new.html">Registrar Matricula</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="../matriculas/edit.html">Editar Matricula</a></li>
+    
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-2">
+                                            <p class="category-heading">Semestre</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../semestres/">Ver Todos</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../semestres/">Registrar
+                                                        Nuevo</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-2">
+                                            <p class="category-heading">Cursos</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../cursos/">Ver Todos</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../cursos/">Registrar
+                                                        Curso</a></li>
+    
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-2">
+                                            <p class="category-heading">Talleres</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../talleres/">Ver Todos</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../talleres/">Registrar
+                                                        Nuevo</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-2">
+                                            <p class="category-heading">Grupos</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../grupos/">Ver Todos</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../grupos/">Registrar
+                                                        Nuevo</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-2">
+                                            <p class="category-heading">Horarios</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../horarios/">Ver Todos</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../horarios/">Registrar
+                                                        Nuevo</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi mdi-account-card-details menu-icon"></i>
+                                    <span class="menu-title">Usuarios</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/">Ver Todos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                                Usuario</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                                    Usuario</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+                                    <span class="menu-title">Docentes</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../docentes/">Listar Docentes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../docentes/new.html">Agregar Nuevo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../docentes/edit.html">Editar Docente</a>
+                                            </li>
+    
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-android-studio menu-icon"></i>
+                                    <span class="menu-title">Alumnos</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../alumnos/index.html">Listar Alumnos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../alumnos/new.html">Agregar Nuevo</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../alumnos/edit.html">Editar Alumno</a></li>
+    
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                                    <span class="menu-title">Reportes</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../reportes/alumnos-rp.html">Reporte Alumnos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../reportes/docentes-rp.html"> Reporte Docente</a></li>
+    
+                                    </ul>
+                                </div>
+                            </li>
+    
+    
+                            <li class="nav-item">
+                                <a href="../soporte/" class="nav-link">
+                                    <i class="mdi mdi-information-outline menu-icon"></i>
+                                    <span class="menu-title">Soporte</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">TODOS LAS MATRICULAS</h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table id="list-matriculas" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Semestre</th>
+                                                    <th>DNI</th>
+                                                    <th>Fecha Mat.</th>
+                                                    <th>Monto</th>
+                                                    <th>Estado</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>2018-01</td>
+                                                    <td>93943167</td>
+                                                    <td>02/09/2017</td>
+                                                    <td>S/.96.06</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>2019-02</td>
+                                                    <td>26580602</td>
+                                                    <td>02/25/2017</td>
+                                                    <td>S/.97.11</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>2019-02</td>
+                                                    <td>98996013</td>
+                                                    <td>07/17/2018</td>
+                                                    <td>S/.96.88</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>2017-02</td>
+                                                    <td>32391976</td>
+                                                    <td>12/28/2017</td>
+                                                    <td>S/.96.16</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>2019-02</td>
+                                                    <td>55861885</td>
+                                                    <td>10/06/2018</td>
+                                                    <td>S/.99.80</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>2017-01</td>
+                                                    <td>19112170</td>
+                                                    <td>05/11/2017</td>
+                                                    <td>S/.98.48</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>2017-01</td>
+                                                    <td>71967801</td>
+                                                    <td>11/29/2017</td>
+                                                    <td>S/.96.00</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>2017-02</td>
+                                                    <td>34816021</td>
+                                                    <td>07/12/2017</td>
+                                                    <td>S/.95.21</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>2019-02</td>
+                                                    <td>99116042</td>
+                                                    <td>05/13/2017</td>
+                                                    <td>S/.98.10</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>2018-01</td>
+                                                    <td>55106911</td>
+                                                    <td>12/16/2017</td>
+                                                    <td>S/.96.28</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>2017-01</td>
+                                                    <td>74680560</td>
+                                                    <td>07/27/2017</td>
+                                                    <td>S/.96.89</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>2017-02</td>
+                                                    <td>26532849</td>
+                                                    <td>04/01/2017</td>
+                                                    <td>S/.95.48</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>2017-02</td>
+                                                    <td>20584218</td>
+                                                    <td>08/01/2018</td>
+                                                    <td>S/.98.88</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>2019-02</td>
+                                                    <td>19532839</td>
+                                                    <td>11/01/2017</td>
+                                                    <td>S/.98.21</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>2017-02</td>
+                                                    <td>96466573</td>
+                                                    <td>09/01/2018</td>
+                                                    <td>S/.96.99</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>2017-02</td>
+                                                    <td>61760957</td>
+                                                    <td>10/20/2018</td>
+                                                    <td>S/.99.56</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>2019-02</td>
+                                                    <td>92041022</td>
+                                                    <td>06/15/2017</td>
+                                                    <td>S/.95.81</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>2017-02</td>
+                                                    <td>11114678</td>
+                                                    <td>01/17/2018</td>
+                                                    <td>S/.95.82</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>2017-02</td>
+                                                    <td>64396667</td>
+                                                    <td>08/12/2017</td>
+                                                    <td>S/.98.25</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>2019-02</td>
+                                                    <td>90316043</td>
+                                                    <td>06/10/2017</td>
+                                                    <td>S/.98.09</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>2018-01</td>
+                                                    <td>42386875</td>
+                                                    <td>01/11/2018</td>
+                                                    <td>S/.96.04</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>2019-02</td>
+                                                    <td>41394857</td>
+                                                    <td>07/24/2018</td>
+                                                    <td>S/.98.60</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23</td>
+                                                    <td>2018-01</td>
+                                                    <td>24137004</td>
+                                                    <td>05/07/2018</td>
+                                                    <td>S/.98.35</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24</td>
+                                                    <td>2019-02</td>
+                                                    <td>91432094</td>
+                                                    <td>01/14/2018</td>
+                                                    <td>S/.97.80</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25</td>
+                                                    <td>2017-02</td>
+                                                    <td>24564035</td>
+                                                    <td>08/18/2018</td>
+                                                    <td>S/.99.88</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>2017-02</td>
+                                                    <td>99199594</td>
+                                                    <td>08/08/2018</td>
+                                                    <td>S/.96.46</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>27</td>
+                                                    <td>2019-02</td>
+                                                    <td>41904511</td>
+                                                    <td>03/19/2018</td>
+                                                    <td>S/.97.06</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>2018-01</td>
+                                                    <td>30479004</td>
+                                                    <td>06/01/2018</td>
+                                                    <td>S/.95.58</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>2017-01</td>
+                                                    <td>44217420</td>
+                                                    <td>05/25/2018</td>
+                                                    <td>S/.95.48</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30</td>
+                                                    <td>2017-01</td>
+                                                    <td>14874729</td>
+                                                    <td>05/19/2017</td>
+                                                    <td>S/.99.81</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>31</td>
+                                                    <td>2018-01</td>
+                                                    <td>50200818</td>
+                                                    <td>08/08/2018</td>
+                                                    <td>S/.100.00</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>32</td>
+                                                    <td>2017-01</td>
+                                                    <td>94184633</td>
+                                                    <td>11/10/2017</td>
+                                                    <td>S/.96.70</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>33</td>
+                                                    <td>2019-02</td>
+                                                    <td>76722411</td>
+                                                    <td>06/25/2017</td>
+                                                    <td>S/.95.83</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>34</td>
+                                                    <td>2019-02</td>
+                                                    <td>36337448</td>
+                                                    <td>06/10/2017</td>
+                                                    <td>S/.98.11</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>35</td>
+                                                    <td>2017-02</td>
+                                                    <td>79501198</td>
+                                                    <td>08/06/2018</td>
+                                                    <td>S/.95.99</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>36</td>
+                                                    <td>2017-01</td>
+                                                    <td>48893497</td>
+                                                    <td>12/04/2017</td>
+                                                    <td>S/.99.43</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>37</td>
+                                                    <td>2019-02</td>
+                                                    <td>99504388</td>
+                                                    <td>09/11/2017</td>
+                                                    <td>S/.96.03</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>38</td>
+                                                    <td>2019-02</td>
+                                                    <td>22689174</td>
+                                                    <td>08/17/2018</td>
+                                                    <td>S/.95.28</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>39</td>
+                                                    <td>2017-02</td>
+                                                    <td>23392098</td>
+                                                    <td>06/06/2018</td>
+                                                    <td>S/.99.87</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>40</td>
+                                                    <td>2019-02</td>
+                                                    <td>94052766</td>
+                                                    <td>04/23/2018</td>
+                                                    <td>S/.98.72</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>41</td>
+                                                    <td>2017-01</td>
+                                                    <td>86450941</td>
+                                                    <td>04/23/2018</td>
+                                                    <td>S/.99.28</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>42</td>
+                                                    <td>2019-02</td>
+                                                    <td>83978717</td>
+                                                    <td>07/10/2017</td>
+                                                    <td>S/.95.38</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>43</td>
+                                                    <td>2019-02</td>
+                                                    <td>97801064</td>
+                                                    <td>04/15/2017</td>
+                                                    <td>S/.98.48</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>44</td>
+                                                    <td>2019-02</td>
+                                                    <td>56116423</td>
+                                                    <td>08/12/2018</td>
+                                                    <td>S/.95.41</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>45</td>
+                                                    <td>2017-02</td>
+                                                    <td>93173025</td>
+                                                    <td>03/28/2017</td>
+                                                    <td>S/.97.65</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>46</td>
+                                                    <td>2017-01</td>
+                                                    <td>20497936</td>
+                                                    <td>03/29/2017</td>
+                                                    <td>S/.98.84</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>47</td>
+                                                    <td>2017-02</td>
+                                                    <td>93649722</td>
+                                                    <td>11/07/2017</td>
+                                                    <td>S/.99.57</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>48</td>
+                                                    <td>2019-02</td>
+                                                    <td>56999717</td>
+                                                    <td>09/24/2017</td>
+                                                    <td>S/.96.62</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>49</td>
+                                                    <td>2017-01</td>
+                                                    <td>52081783</td>
+                                                    <td>11/16/2018</td>
+                                                    <td>S/.97.53</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50</td>
+                                                    <td>2017-02</td>
+                                                    <td>14202959</td>
+                                                    <td>05/17/2018</td>
+                                                    <td>S/.97.94</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>51</td>
+                                                    <td>2018-01</td>
+                                                    <td>14942323</td>
+                                                    <td>12/02/2018</td>
+                                                    <td>S/.97.02</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>52</td>
+                                                    <td>2017-01</td>
+                                                    <td>11415124</td>
+                                                    <td>05/30/2018</td>
+                                                    <td>S/.97.36</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>53</td>
+                                                    <td>2019-02</td>
+                                                    <td>45184398</td>
+                                                    <td>08/08/2017</td>
+                                                    <td>S/.95.88</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>54</td>
+                                                    <td>2018-01</td>
+                                                    <td>31699368</td>
+                                                    <td>02/18/2018</td>
+                                                    <td>S/.95.50</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>55</td>
+                                                    <td>2017-02</td>
+                                                    <td>89002756</td>
+                                                    <td>10/29/2018</td>
+                                                    <td>S/.95.46</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>56</td>
+                                                    <td>2017-01</td>
+                                                    <td>16383862</td>
+                                                    <td>08/26/2018</td>
+                                                    <td>S/.99.96</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>57</td>
+                                                    <td>2018-01</td>
+                                                    <td>59770150</td>
+                                                    <td>02/11/2018</td>
+                                                    <td>S/.98.87</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>58</td>
+                                                    <td>2017-01</td>
+                                                    <td>94850786</td>
+                                                    <td>05/27/2017</td>
+                                                    <td>S/.96.86</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>59</td>
+                                                    <td>2017-01</td>
+                                                    <td>87610235</td>
+                                                    <td>07/12/2017</td>
+                                                    <td>S/.95.23</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>60</td>
+                                                    <td>2017-02</td>
+                                                    <td>47832143</td>
+                                                    <td>07/17/2017</td>
+                                                    <td>S/.99.99</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>61</td>
+                                                    <td>2017-01</td>
+                                                    <td>97342764</td>
+                                                    <td>08/16/2018</td>
+                                                    <td>S/.97.68</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>62</td>
+                                                    <td>2018-01</td>
+                                                    <td>88276878</td>
+                                                    <td>06/23/2018</td>
+                                                    <td>S/.97.30</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>63</td>
+                                                    <td>2018-01</td>
+                                                    <td>47368013</td>
+                                                    <td>02/20/2018</td>
+                                                    <td>S/.97.70</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>64</td>
+                                                    <td>2017-01</td>
+                                                    <td>64915770</td>
+                                                    <td>06/01/2018</td>
+                                                    <td>S/.99.51</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>65</td>
+                                                    <td>2018-01</td>
+                                                    <td>16184301</td>
+                                                    <td>10/20/2017</td>
+                                                    <td>S/.95.61</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>66</td>
+                                                    <td>2017-01</td>
+                                                    <td>36049140</td>
+                                                    <td>02/23/2017</td>
+                                                    <td>S/.99.82</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>67</td>
+                                                    <td>2018-01</td>
+                                                    <td>39890700</td>
+                                                    <td>06/12/2017</td>
+                                                    <td>S/.97.86</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>68</td>
+                                                    <td>2018-01</td>
+                                                    <td>90692147</td>
+                                                    <td>06/27/2018</td>
+                                                    <td>S/.96.96</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>69</td>
+                                                    <td>2018-01</td>
+                                                    <td>41605264</td>
+                                                    <td>08/28/2018</td>
+                                                    <td>S/.96.21</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>70</td>
+                                                    <td>2017-01</td>
+                                                    <td>45341037</td>
+                                                    <td>05/22/2018</td>
+                                                    <td>S/.95.05</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>71</td>
+                                                    <td>2017-02</td>
+                                                    <td>77899334</td>
+                                                    <td>12/15/2018</td>
+                                                    <td>S/.98.11</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>72</td>
+                                                    <td>2017-02</td>
+                                                    <td>72486646</td>
+                                                    <td>12/05/2018</td>
+                                                    <td>S/.96.12</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>73</td>
+                                                    <td>2017-02</td>
+                                                    <td>67385744</td>
+                                                    <td>02/24/2017</td>
+                                                    <td>S/.97.79</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>74</td>
+                                                    <td>2018-01</td>
+                                                    <td>39833591</td>
+                                                    <td>10/22/2018</td>
+                                                    <td>S/.95.84</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>75</td>
+                                                    <td>2017-01</td>
+                                                    <td>58273445</td>
+                                                    <td>07/12/2018</td>
+                                                    <td>S/.96.90</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>76</td>
+                                                    <td>2018-01</td>
+                                                    <td>84482726</td>
+                                                    <td>08/08/2017</td>
+                                                    <td>S/.99.66</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>77</td>
+                                                    <td>2017-01</td>
+                                                    <td>31843739</td>
+                                                    <td>02/07/2017</td>
+                                                    <td>S/.99.89</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>78</td>
+                                                    <td>2019-02</td>
+                                                    <td>21203308</td>
+                                                    <td>09/21/2018</td>
+                                                    <td>S/.99.68</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>79</td>
+                                                    <td>2019-02</td>
+                                                    <td>74145745</td>
+                                                    <td>08/05/2017</td>
+                                                    <td>S/.99.97</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>80</td>
+                                                    <td>2017-02</td>
+                                                    <td>47750435</td>
+                                                    <td>09/23/2018</td>
+                                                    <td>S/.97.34</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>81</td>
+                                                    <td>2019-02</td>
+                                                    <td>24870288</td>
+                                                    <td>05/24/2017</td>
+                                                    <td>S/.99.34</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>82</td>
+                                                    <td>2017-02</td>
+                                                    <td>21215311</td>
+                                                    <td>07/12/2018</td>
+                                                    <td>S/.97.82</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>83</td>
+                                                    <td>2019-02</td>
+                                                    <td>26522784</td>
+                                                    <td>06/22/2018</td>
+                                                    <td>S/.96.03</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>84</td>
+                                                    <td>2019-02</td>
+                                                    <td>21817566</td>
+                                                    <td>10/29/2018</td>
+                                                    <td>S/.96.87</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>85</td>
+                                                    <td>2019-02</td>
+                                                    <td>97783434</td>
+                                                    <td>04/06/2018</td>
+                                                    <td>S/.96.54</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>86</td>
+                                                    <td>2018-01</td>
+                                                    <td>59993014</td>
+                                                    <td>05/15/2017</td>
+                                                    <td>S/.99.33</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>87</td>
+                                                    <td>2019-02</td>
+                                                    <td>20347906</td>
+                                                    <td>11/28/2018</td>
+                                                    <td>S/.95.49</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>88</td>
+                                                    <td>2017-01</td>
+                                                    <td>78621775</td>
+                                                    <td>01/25/2018</td>
+                                                    <td>S/.95.91</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>89</td>
+                                                    <td>2019-02</td>
+                                                    <td>63180084</td>
+                                                    <td>04/03/2018</td>
+                                                    <td>S/.95.42</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>90</td>
+                                                    <td>2019-02</td>
+                                                    <td>86205629</td>
+                                                    <td>01/06/2017</td>
+                                                    <td>S/.96.71</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>91</td>
+                                                    <td>2018-01</td>
+                                                    <td>23233509</td>
+                                                    <td>06/25/2017</td>
+                                                    <td>S/.98.55</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>92</td>
+                                                    <td>2019-02</td>
+                                                    <td>61149899</td>
+                                                    <td>05/18/2017</td>
+                                                    <td>S/.96.35</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>93</td>
+                                                    <td>2019-02</td>
+                                                    <td>38156580</td>
+                                                    <td>11/21/2018</td>
+                                                    <td>S/.98.21</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>94</td>
+                                                    <td>2017-01</td>
+                                                    <td>23237871</td>
+                                                    <td>02/02/2017</td>
+                                                    <td>S/.98.83</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>95</td>
+                                                    <td>2017-02</td>
+                                                    <td>24524547</td>
+                                                    <td>01/07/2018</td>
+                                                    <td>S/.97.44</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>96</td>
+                                                    <td>2017-01</td>
+                                                    <td>73346045</td>
+                                                    <td>06/26/2018</td>
+                                                    <td>S/.99.63</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>97</td>
+                                                    <td>2019-02</td>
+                                                    <td>70559759</td>
+                                                    <td>03/22/2018</td>
+                                                    <td>S/.95.41</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>98</td>
+                                                    <td>2018-01</td>
+                                                    <td>35992918</td>
+                                                    <td>03/29/2018</td>
+                                                    <td>S/.95.43</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>99</td>
+                                                    <td>2019-02</td>
+                                                    <td>52891504</td>
+                                                    <td>11/04/2018</td>
+                                                    <td>S/.95.98</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>100</td>
+                                                    <td>2019-02</td>
+                                                    <td>65505247</td>
+                                                    <td>01/07/2018</td>
+                                                    <td>S/.98.54</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:../../partials/_footer.html -->
+                <footer class="footer text-center">
+                        <div class="w-100 clearfix">
+                            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a>Urbanui</a>. All rights reserved.</span>
+                            <span class="d-none" >Theme Pro. License Estended by Alexander R.</span>
+                        </div>
+                    </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- base:js -->
+    <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../../../js/off-canvas.js"></script>
+    <script src="../../../../js/hoverable-collapse.js"></script>
+    <script src="../../../../js/template.js"></script>
+    <script src="../../../../js/settings.js"></script>
+    <script src="../../../../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <script src="../../../../js/data-table.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+</html>

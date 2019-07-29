@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IEP-ASIS</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="../../../../vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../../../css/horizontal-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../../../images/favicon.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_horizontal-navbar.html -->
+        <div class="horizontal-menu">
+            <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+                <div class="container">
+                    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                        <a class="navbar-brand brand-logo" href="../index.html"><img src="../images/logo.svg"
+                                alt="logo" /></a>
+                        <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.svg"
+                                alt="logo" /></a>
+                    </div>
+                    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+
+                        <ul class="navbar-nav navbar-nav-right">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                                    id="messageDropdown" href="#" data-toggle="dropdown">
+                                    <i class="mdi mdi-email-outline mx-0"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                    aria-labelledby="messageDropdown">
+                                    <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <img src="../images/faces/face4.jpg" alt="image" class="profile-pic">
+                                        </div>
+                                        <div class="preview-item-content flex-grow">
+                                            <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                            </h6>
+                                            <p class="font-weight-light small-text text-muted mb-0">
+                                                The meeting is cancelled
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                                        </div>
+                                        <div class="preview-item-content flex-grow">
+                                            <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                            </h6>
+                                            <p class="font-weight-light small-text text-muted mb-0">
+                                                New product launch
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <img src="../images/faces/face3.jpg" alt="image" class="profile-pic">
+                                        </div>
+                                        <div class="preview-item-content flex-grow">
+                                            <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                            </h6>
+                                            <p class="font-weight-light small-text text-muted mb-0">
+                                                Upcoming board meeting
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                                    id="notificationDropdown" href="#" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell-outline mx-0"></i>
+                                    <span class="count"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                    aria-labelledby="notificationDropdown">
+                                    <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-success">
+                                                <i class="mdi mdi-information mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                            <p class="font-weight-light small-text mb-0 text-muted">
+                                                Just now
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-warning">
+                                                <i class="mdi mdi-settings mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                            <p class="font-weight-light small-text mb-0 text-muted">
+                                                Private message
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-info">
+                                                <i class="mdi mdi-account-box mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                            <p class="font-weight-light small-text mb-0 text-muted">
+                                                2 days ago
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-profile dropdown">
+                                <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                                    <img src="../images/faces/face5.jpg" alt="profile" />
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                                    aria-labelledby="profileDropdown">
+                                    <a class="dropdown-item" href="../index.html">
+                                        <i class="mdi mdi-logout"></i>
+                                        Salir
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                            data-toggle="horizontal-menu-toggle">
+                            <span class="mdi mdi-menu"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <nav class="bottom-navbar">
+                <div class="container">
+                    <ul class="nav page-navigation">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                                <span class="menu-title">Principal</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mega-menu">
+                            <a class="nav-link">
+                                <i class="mdi mdi-airplay menu-icon"></i>
+                                <span class="menu-title">Gestion</span>
+                                <i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <div class="col-group-wrapper row">
+                                    <div class="col-group col-md-2">
+                                        <p class="category-heading">Matriculas</p>
+                                        <ul class="submenu-item">
+                                            <li class="nav-item"><a class="nav-link" href="../matriculas/index.html">Ver
+                                                    Todas</a></li>
+                                            <li class="nav-item"><a class="nav-link"
+                                                    href="../matriculas/new.html">Registrar Matricula</a></li>
+                                            <li class="nav-item"><a class="nav-link"
+                                                    href="../matriculas/edit.html">Editar Matricula</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-group col-md-2">
+                                        <p class="category-heading">Semestre</p>
+                                        <ul class="submenu-item">
+                                            <li class="nav-item"><a class="nav-link" href="../semestres/">Ver Todos</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="../semestres/">Registrar
+                                                    Nuevo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-group col-md-2">
+                                        <p class="category-heading">Cursos</p>
+                                        <ul class="submenu-item">
+                                            <li class="nav-item"><a class="nav-link" href="../cursos/">Ver Todos</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="../cursos/">Registrar
+                                                    Curso</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-group col-md-2">
+                                        <p class="category-heading">Talleres</p>
+                                        <ul class="submenu-item">
+                                            <li class="nav-item"><a class="nav-link" href="../talleres/">Ver Todos</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="../talleres/">Registrar
+                                                    Nuevo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-group col-md-2">
+                                        <p class="category-heading">Grupos</p>
+                                        <ul class="submenu-item">
+                                            <li class="nav-item"><a class="nav-link" href="../grupos/">Ver Todos</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="../grupos/">Registrar
+                                                    Nuevo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-group col-md-2">
+                                        <p class="category-heading">Horarios</p>
+                                        <ul class="submenu-item">
+                                            <li class="nav-item"><a class="nav-link" href="../horarios/">Ver Todos</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="../horarios/">Registrar
+                                                    Nuevo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="mdi mdi mdi-account-card-details menu-icon"></i>
+                                <span class="menu-title">Usuarios</span>
+                                <i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" href="../usuarios/">Ver Todos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                            Usuario</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                            Usuario</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+                                <span class="menu-title">Docentes</span>
+                                <i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../docentes/">Listar Docentes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../docentes/new.html">Agregar Nuevo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../docentes/edit.html">Editar Docente</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ">
+                                <i class="mdi mdi-android-studio menu-icon"></i>
+                                <span class="menu-title">Alumnos</span>
+                                <i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" href="../alumnos/index.html">Listar
+                                            Alumnos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../alumnos/new.html">Agregar
+                                            Nuevo</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../alumnos/edit.html">Editar
+                                            Alumno</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                                <span class="menu-title">Reportes</span>
+                                <i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" href="../reportes/alumnos-rp.html">Reporte
+                                            Alumnos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../reportes/docentes-rp.html">
+                                            Reporte Docente</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="../soporte/" class="nav-link">
+                                <i class="mdi mdi-information-outline menu-icon"></i>
+                                <span class="menu-title">Soporte</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">TODOS LOS ALUMNOS</h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table id="list-student" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>DNI</th>
+                                                    <th>Nombre Completo</th>
+                                                    <th>Fecha Nac.</th>
+                                                    <th>Telefono</th>
+                                                    <th>Estado</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>36082200</td>
+                                                    <td>Pena Whitehead, Brittany</td>
+                                                    <td>02/07/2002</td>
+                                                    <td>810-1788</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>37564809</td>
+                                                    <td>Trevino Tyson, Gareth</td>
+                                                    <td>06/10/2005</td>
+                                                    <td>292-6570</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>25348799</td>
+                                                    <td>Marks Holden, Alfreda</td>
+                                                    <td>03/28/2002</td>
+                                                    <td>1323-891-8885</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>66692549</td>
+                                                    <td>Mckee Gonzales, Tarik</td>
+                                                    <td>09/29/2014</td>
+                                                    <td>1876-299-9750</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>74178204</td>
+                                                    <td>Silva Weber, Driscoll</td>
+                                                    <td>02/16/2006</td>
+                                                    <td>1274-743-4660</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>68952395</td>
+                                                    <td>Clarke Joseph, Keefe</td>
+                                                    <td>02/15/2013</td>
+                                                    <td>435-8687</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>33139503</td>
+                                                    <td>Johnston Schneider, Cara</td>
+                                                    <td>01/05/2012</td>
+                                                    <td>947-8746</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>19928543</td>
+                                                    <td>Hobbs Guerra, Sophia</td>
+                                                    <td>12/12/2009</td>
+                                                    <td>1432-714-3222</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>36606093</td>
+                                                    <td>Pacheco Anthony, Thor</td>
+                                                    <td>05/29/2010</td>
+                                                    <td>526-0234</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>84872394</td>
+                                                    <td>Steele Hahn, Beau</td>
+                                                    <td>02/19/2010</td>
+                                                    <td>1646-575-8737</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>21466311</td>
+                                                    <td>Carlson Hinton, Jacob</td>
+                                                    <td>08/08/2009</td>
+                                                    <td>169-2440</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>85033053</td>
+                                                    <td>Avery Page, Willow</td>
+                                                    <td>10/11/2011</td>
+                                                    <td>1807-589-6004</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>33447932</td>
+                                                    <td>Bauer Christensen, Norman</td>
+                                                    <td>02/20/2002</td>
+                                                    <td>1209-815-0114</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>53656264</td>
+                                                    <td>Schneider Richardson, Carson</td>
+                                                    <td>08/27/2000</td>
+                                                    <td>993-5847</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>60367102</td>
+                                                    <td>King Pacheco, Alisa</td>
+                                                    <td>06/07/2014</td>
+                                                    <td>958-1470</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>42500501</td>
+                                                    <td>Oneill Rollins, Beau</td>
+                                                    <td>01/07/2007</td>
+                                                    <td>834-7173</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>99070894</td>
+                                                    <td>Whitaker Eaton, Fiona</td>
+                                                    <td>07/29/2003</td>
+                                                    <td>1313-972-1333</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>76587722</td>
+                                                    <td>Olson Rich, Salvador</td>
+                                                    <td>04/05/2003</td>
+                                                    <td>1554-863-4542</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>65271731</td>
+                                                    <td>Waller Horton, Emery</td>
+                                                    <td>10/08/2013</td>
+                                                    <td>1325-278-4472</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>82460634</td>
+                                                    <td>Workman Massey, Ethan</td>
+                                                    <td>01/04/2009</td>
+                                                    <td>573-9570</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>73064091</td>
+                                                    <td>Sparks Mathews, Patience</td>
+                                                    <td>01/30/2006</td>
+                                                    <td>279-1347</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>33851234</td>
+                                                    <td>Hunter Sloan, Wynne</td>
+                                                    <td>09/12/2009</td>
+                                                    <td>1225-441-4256</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23</td>
+                                                    <td>14052084</td>
+                                                    <td>Knowles Mccray, Eve</td>
+                                                    <td>09/16/2006</td>
+                                                    <td>1423-519-6103</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24</td>
+                                                    <td>79531599</td>
+                                                    <td>Olson Mcdaniel, Guinevere</td>
+                                                    <td>11/03/2010</td>
+                                                    <td>290-4146</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25</td>
+                                                    <td>97628923</td>
+                                                    <td>Horne Simon, Chloe</td>
+                                                    <td>10/31/2013</td>
+                                                    <td>1894-694-6371</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>26347213</td>
+                                                    <td>Riggs Bryan, Patrick</td>
+                                                    <td>03/12/2007</td>
+                                                    <td>1418-512-3092</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>27</td>
+                                                    <td>22639999</td>
+                                                    <td>Shepherd Merritt, Sade</td>
+                                                    <td>11/01/2011</td>
+                                                    <td>537-1040</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>28605561</td>
+                                                    <td>Hahn Hensley, Charde</td>
+                                                    <td>04/09/2002</td>
+                                                    <td>1407-930-7488</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>85775063</td>
+                                                    <td>Oliver Mueller, Emily</td>
+                                                    <td>03/07/2010</td>
+                                                    <td>388-7599</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30</td>
+                                                    <td>99452763</td>
+                                                    <td>Sharpe Quinn, Wilma</td>
+                                                    <td>11/09/2001</td>
+                                                    <td>1475-236-2835</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>31</td>
+                                                    <td>11271970</td>
+                                                    <td>Montoya Klein, Murphy</td>
+                                                    <td>03/01/2004</td>
+                                                    <td>936-0821</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>32</td>
+                                                    <td>56882136</td>
+                                                    <td>Mendez Macias, Deacon</td>
+                                                    <td>07/31/2000</td>
+                                                    <td>1214-535-8712</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>33</td>
+                                                    <td>13761016</td>
+                                                    <td>Koch Farrell, Yeo</td>
+                                                    <td>10/25/2007</td>
+                                                    <td>1582-520-1671</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>34</td>
+                                                    <td>91373118</td>
+                                                    <td>Burns Hebert, Castor</td>
+                                                    <td>11/29/2008</td>
+                                                    <td>1672-430-3843</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>35</td>
+                                                    <td>92481629</td>
+                                                    <td>Stephens Fuller, Megan</td>
+                                                    <td>06/11/2012</td>
+                                                    <td>157-5822</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>36</td>
+                                                    <td>11190145</td>
+                                                    <td>Henson Henderson, Freya</td>
+                                                    <td>03/24/2004</td>
+                                                    <td>190-6535</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>37</td>
+                                                    <td>20613419</td>
+                                                    <td>Ware Parrish, Rooney</td>
+                                                    <td>07/28/2010</td>
+                                                    <td>533-6268</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>38</td>
+                                                    <td>51548783</td>
+                                                    <td>Matthews Silva, Kimberly</td>
+                                                    <td>06/03/2015</td>
+                                                    <td>631-2782</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>39</td>
+                                                    <td>61001748</td>
+                                                    <td>Ross Best, Liberty</td>
+                                                    <td>01/28/2012</td>
+                                                    <td>783-1237</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>40</td>
+                                                    <td>37080566</td>
+                                                    <td>Shepherd Cameron, Finn</td>
+                                                    <td>05/13/2008</td>
+                                                    <td>1203-382-4805</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>41</td>
+                                                    <td>70820153</td>
+                                                    <td>Perkins Jefferson, Ingrid</td>
+                                                    <td>07/01/2012</td>
+                                                    <td>238-6770</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>42</td>
+                                                    <td>60815338</td>
+                                                    <td>Williams Boyd, Axel</td>
+                                                    <td>04/18/2011</td>
+                                                    <td>1765-691-4563</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>43</td>
+                                                    <td>53049302</td>
+                                                    <td>Erickson Hoffman, Holly</td>
+                                                    <td>01/10/2013</td>
+                                                    <td>114-6253</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>44</td>
+                                                    <td>55423229</td>
+                                                    <td>Shaffer Mcclain, Quentin</td>
+                                                    <td>03/26/2015</td>
+                                                    <td>1172-673-4907</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>45</td>
+                                                    <td>25881965</td>
+                                                    <td>Giles Cardenas, Violet</td>
+                                                    <td>03/22/2007</td>
+                                                    <td>828-7540</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>46</td>
+                                                    <td>68212614</td>
+                                                    <td>Cobb Welch, Connor</td>
+                                                    <td>06/24/2015</td>
+                                                    <td>744-2912</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>47</td>
+                                                    <td>45976169</td>
+                                                    <td>Hull Hughes, Hayfa</td>
+                                                    <td>04/25/2005</td>
+                                                    <td>1936-999-2309</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>48</td>
+                                                    <td>86184538</td>
+                                                    <td>Sparks Richard, Keefe</td>
+                                                    <td>11/11/2012</td>
+                                                    <td>1725-331-0974</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>49</td>
+                                                    <td>56522284</td>
+                                                    <td>Rodriquez Reeves, Aaron</td>
+                                                    <td>04/13/2015</td>
+                                                    <td>1152-355-9315</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50</td>
+                                                    <td>60466750</td>
+                                                    <td>Wiley Hammond, Yoshi</td>
+                                                    <td>08/02/2006</td>
+                                                    <td>1116-200-0978</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>51</td>
+                                                    <td>30155486</td>
+                                                    <td>Butler Johns, Stella</td>
+                                                    <td>08/08/2013</td>
+                                                    <td>1605-881-3123</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>52</td>
+                                                    <td>45477475</td>
+                                                    <td>Whitaker Goodwin, Aaron</td>
+                                                    <td>04/09/2012</td>
+                                                    <td>183-6904</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>53</td>
+                                                    <td>71221673</td>
+                                                    <td>Stein Griffin, Kaseem</td>
+                                                    <td>11/04/2003</td>
+                                                    <td>1851-602-7687</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>54</td>
+                                                    <td>21410466</td>
+                                                    <td>Calderon Carpenter, Phyllis</td>
+                                                    <td>05/27/2007</td>
+                                                    <td>1392-999-0139</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>55</td>
+                                                    <td>58256087</td>
+                                                    <td>Bradford Lara, Evelyn</td>
+                                                    <td>08/20/2006</td>
+                                                    <td>1451-292-7418</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>56</td>
+                                                    <td>46616039</td>
+                                                    <td>William Chang, Eden</td>
+                                                    <td>06/19/2007</td>
+                                                    <td>1387-225-8216</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>57</td>
+                                                    <td>19759488</td>
+                                                    <td>Justice Bowers, Deanna</td>
+                                                    <td>04/03/2006</td>
+                                                    <td>670-9577</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>58</td>
+                                                    <td>30731845</td>
+                                                    <td>Kerr Cooper, Randall</td>
+                                                    <td>07/03/2008</td>
+                                                    <td>1564-407-8838</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>59</td>
+                                                    <td>10518913</td>
+                                                    <td>Campbell Wells, Lester</td>
+                                                    <td>06/12/2012</td>
+                                                    <td>1165-762-3717</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>60</td>
+                                                    <td>62325865</td>
+                                                    <td>Mullen Roberts, Howard</td>
+                                                    <td>11/13/2001</td>
+                                                    <td>794-1514</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>61</td>
+                                                    <td>88242254</td>
+                                                    <td>Banks Barrera, Angela</td>
+                                                    <td>07/30/2001</td>
+                                                    <td>1931-865-8053</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>62</td>
+                                                    <td>66278208</td>
+                                                    <td>Atkins Best, Octavius</td>
+                                                    <td>02/14/2007</td>
+                                                    <td>914-6806</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>63</td>
+                                                    <td>19947128</td>
+                                                    <td>Moreno Barrera, Alika</td>
+                                                    <td>01/05/2009</td>
+                                                    <td>634-2964</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>64</td>
+                                                    <td>16071768</td>
+                                                    <td>Ayala Delaney, Noel</td>
+                                                    <td>12/24/2008</td>
+                                                    <td>125-6365</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>65</td>
+                                                    <td>21700374</td>
+                                                    <td>Arnold Morrow, Autumn</td>
+                                                    <td>06/01/2005</td>
+                                                    <td>1884-498-9186</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>66</td>
+                                                    <td>57200960</td>
+                                                    <td>Bradford Poole, Keefe</td>
+                                                    <td>07/16/2007</td>
+                                                    <td>757-9008</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>67</td>
+                                                    <td>99582019</td>
+                                                    <td>Mcclure Vincent, Jael</td>
+                                                    <td>12/27/2005</td>
+                                                    <td>1595-352-1099</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>68</td>
+                                                    <td>73530966</td>
+                                                    <td>Faulkner Ashley, Noah</td>
+                                                    <td>01/27/2002</td>
+                                                    <td>1557-684-5953</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>69</td>
+                                                    <td>65603193</td>
+                                                    <td>Horne Compton, Ivy</td>
+                                                    <td>05/14/2012</td>
+                                                    <td>1728-726-0951</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>70</td>
+                                                    <td>98018512</td>
+                                                    <td>Barlow Tillman, Elmo</td>
+                                                    <td>05/28/2012</td>
+                                                    <td>539-7244</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>71</td>
+                                                    <td>15099491</td>
+                                                    <td>Castro Wyatt, Drew</td>
+                                                    <td>04/02/2012</td>
+                                                    <td>1790-672-2986</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>72</td>
+                                                    <td>68511418</td>
+                                                    <td>Mathis Logan, Hasad</td>
+                                                    <td>12/26/2008</td>
+                                                    <td>1158-102-0788</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>73</td>
+                                                    <td>70862799</td>
+                                                    <td>Wade Waters, Blake</td>
+                                                    <td>05/29/2005</td>
+                                                    <td>326-0699</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>74</td>
+                                                    <td>50475167</td>
+                                                    <td>Jarvis Foster, Deanna</td>
+                                                    <td>05/19/2011</td>
+                                                    <td>1263-678-3411</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>75</td>
+                                                    <td>91316292</td>
+                                                    <td>Nash Livingston, James</td>
+                                                    <td>06/24/2005</td>
+                                                    <td>1154-908-6542</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>76</td>
+                                                    <td>16568638</td>
+                                                    <td>Hernandez Hogan, Lacey</td>
+                                                    <td>05/28/2011</td>
+                                                    <td>1249-295-4164</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>77</td>
+                                                    <td>24901294</td>
+                                                    <td>Hurley Lambert, Dacey</td>
+                                                    <td>05/29/2007</td>
+                                                    <td>1916-617-9389</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>78</td>
+                                                    <td>94176349</td>
+                                                    <td>Cardenas Serrano, Karleigh</td>
+                                                    <td>06/05/2014</td>
+                                                    <td>552-7982</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>79</td>
+                                                    <td>50601625</td>
+                                                    <td>Ayers Miles, Honorato</td>
+                                                    <td>07/27/2003</td>
+                                                    <td>374-9359</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>80</td>
+                                                    <td>69720736</td>
+                                                    <td>Cummings Gutierrez, Buffy</td>
+                                                    <td>08/03/2001</td>
+                                                    <td>151-5817</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>81</td>
+                                                    <td>43825115</td>
+                                                    <td>Shields Hobbs, Yeo</td>
+                                                    <td>02/14/2011</td>
+                                                    <td>869-7913</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>82</td>
+                                                    <td>40860753</td>
+                                                    <td>Hartman Mclaughlin, Cailin</td>
+                                                    <td>10/24/2011</td>
+                                                    <td>552-4073</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>83</td>
+                                                    <td>38172014</td>
+                                                    <td>Spears Santos, Gail</td>
+                                                    <td>10/31/2007</td>
+                                                    <td>218-9065</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>84</td>
+                                                    <td>70127023</td>
+                                                    <td>Osborne Warner, Alexis</td>
+                                                    <td>02/16/2010</td>
+                                                    <td>1727-848-6941</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>85</td>
+                                                    <td>78306765</td>
+                                                    <td>Brooks Puckett, Alexa</td>
+                                                    <td>02/18/2002</td>
+                                                    <td>1640-869-5442</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>86</td>
+                                                    <td>91146831</td>
+                                                    <td>Justice Wolf, Quintessa</td>
+                                                    <td>04/29/2002</td>
+                                                    <td>212-4095</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>87</td>
+                                                    <td>19631215</td>
+                                                    <td>Pacheco Gray, Rose</td>
+                                                    <td>07/21/2007</td>
+                                                    <td>1844-996-7126</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>88</td>
+                                                    <td>12485239</td>
+                                                    <td>Sharp Stephenson, Liberty</td>
+                                                    <td>06/29/2011</td>
+                                                    <td>1308-150-8589</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>89</td>
+                                                    <td>22549838</td>
+                                                    <td>Odonnell Michael, Rigel</td>
+                                                    <td>09/06/2009</td>
+                                                    <td>728-1217</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>90</td>
+                                                    <td>71239836</td>
+                                                    <td>Hopper Dickerson, Julian</td>
+                                                    <td>08/10/2000</td>
+                                                    <td>701-4628</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>91</td>
+                                                    <td>84330693</td>
+                                                    <td>Lynch Lara, Wynter</td>
+                                                    <td>10/25/2009</td>
+                                                    <td>771-8519</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>92</td>
+                                                    <td>69904776</td>
+                                                    <td>Snow Ryan, Wade</td>
+                                                    <td>11/26/2013</td>
+                                                    <td>1432-152-9346</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>93</td>
+                                                    <td>27715885</td>
+                                                    <td>Church Strong, Derek</td>
+                                                    <td>08/02/2006</td>
+                                                    <td>1326-306-7025</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>94</td>
+                                                    <td>57031956</td>
+                                                    <td>Sweeney Hoover, Felicia</td>
+                                                    <td>07/12/2003</td>
+                                                    <td>1190-489-7386</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>95</td>
+                                                    <td>51735125</td>
+                                                    <td>Meyer Harrison, Gemma</td>
+                                                    <td>04/04/2004</td>
+                                                    <td>423-2670</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>96</td>
+                                                    <td>18603053</td>
+                                                    <td>Cruz Neal, Naida</td>
+                                                    <td>04/28/2014</td>
+                                                    <td>1891-805-2690</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>97</td>
+                                                    <td>29087466</td>
+                                                    <td>Mathis Palmer, Miranda</td>
+                                                    <td>07/07/2013</td>
+                                                    <td>484-6502</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>98</td>
+                                                    <td>61894734</td>
+                                                    <td>Olson Puckett, Ali</td>
+                                                    <td>01/18/2004</td>
+                                                    <td>1640-878-8857</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>99</td>
+                                                    <td>45199467</td>
+                                                    <td>Salazar Dawson, Quintessa</td>
+                                                    <td>09/24/2013</td>
+                                                    <td>1296-269-2803</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>100</td>
+                                                    <td>86165421</td>
+                                                    <td>Whitney Trevino, Libby</td>
+                                                    <td>03/26/2011</td>
+                                                    <td>1634-562-1272</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="show.html" class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:../../partials/_footer.html -->
+                <footer class="footer text-center">
+                    <div class="w-100 clearfix">
+                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019
+                            <a>Urbanui</a>. All rights reserved.</span>
+                        <span class="d-none">Theme Pro. License Estended by Alexander R.</span>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- base:js -->
+    <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../../../js/off-canvas.js"></script>
+    <script src="../../../../js/hoverable-collapse.js"></script>
+    <script src="../../../../js/template.js"></script>
+    <script src="../../../../js/settings.js"></script>
+    <script src="../../../../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <script src="../../../../js/data-table.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+</html>

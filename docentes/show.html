@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/samples/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:08 GMT -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta editor="Alexander R.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>IEP-ASIS</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../vendors/jquery-bar-rating/css-stars.css">
+  <link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../css/horizontal-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+        <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+            <div class="container">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="../index.html"><img src="../images/logo.svg"
+                            alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.svg"
+                            alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                   
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                                id="messageDropdown" href="#" data-toggle="dropdown">
+                                <i class="mdi mdi-email-outline mx-0"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="messageDropdown">
+                                <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face4.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            The meeting is cancelled
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            New product launch
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face3.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            Upcoming board meeting
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                                id="notificationDropdown" href="#" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline mx-0"></i>
+                                <span class="count"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="notificationDropdown">
+                                <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-success">
+                                            <i class="mdi mdi-information mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            Just now
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-warning">
+                                            <i class="mdi mdi-settings mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            Private message
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-info">
+                                            <i class="mdi mdi-account-box mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            2 days ago
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-profile dropdown">
+                            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                                <img src="../images/faces/face5.jpg" alt="profile" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                                aria-labelledby="profileDropdown">
+                                <a class="dropdown-item" href="../index.html">
+                                    <i class="mdi mdi-logout"></i>
+                                    Salir
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                        data-toggle="horizontal-menu-toggle">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <nav class="bottom-navbar">
+            <div class="container">
+                <ul class="nav page-navigation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                            <span class="menu-title">Principal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mega-menu">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-airplay menu-icon"></i>
+                            <span class="menu-title">Gestion</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <div class="col-group-wrapper row">
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Matriculas</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../matriculas/index.html">Ver
+                                                Todas</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="../matriculas/new.html">Registrar Matricula</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="../matriculas/edit.html">Editar Matricula</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Semestre</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../semestres/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../semestres/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Cursos</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../cursos/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../cursos/">Registrar
+                                                Curso</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Talleres</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../talleres/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../talleres/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Grupos</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../grupos/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../grupos/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Horarios</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../horarios/">Ver Todos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../horarios/">Registrar
+                                                Nuevo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi mdi-account-card-details menu-icon"></i>
+                            <span class="menu-title">Usuarios</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../usuarios/">Ver Todos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                        Usuario</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                            Usuario</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+                            <span class="menu-title">Docentes</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../docentes/">Listar Docentes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../docentes/new.html">Agregar Nuevo</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="../docentes/edit.html">Editar Docente</a>
+                                    </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-android-studio menu-icon"></i>
+                            <span class="menu-title">Alumnos</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../alumnos/index.html">Listar Alumnos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../alumnos/new.html">Agregar Nuevo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../alumnos/edit.html">Editar Alumno</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <span class="menu-title">Reportes</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../reportes/alumnos-rp.html">Reporte Alumnos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../reportes/docentes-rp.html"> Reporte Docente</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="../soporte/" class="nav-link">
+                            <i class="mdi mdi-information-outline menu-icon"></i>
+                            <span class="menu-title">Soporte</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="border-bottom text-center pb-4">
+                        <img src="../images/faces/face-teacher-1.png " alt="profile"
+                          class="img-lg rounded-circle mb-3" />
+                        <div class="mb-3">
+                          <h3>Maldonado Grey. V</h3>
+
+                        </div>
+
+
+                      </div>
+                      <div class="border-bottom py-4">
+                        <p>Especialidad</p>
+                        <div>
+                          <label class="badge badge-outline-dark">Comunicacion</label>
+                        </div>
+                      </div>
+
+                      <div class="py-4">
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Estado
+                          </span>
+                          <span class="float-right text-muted">
+                            Habilitado
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Tipo Usuario
+                          </span>
+                          <span class="float-right text-muted">
+                            DOCENTE
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Telefono
+                          </span>
+                          <span class="float-right text-muted">
+                            906 3435 22
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                            Correo
+                          </span>
+                          <span class="float-right text-muted">
+                            test@testmail.com
+                          </span>
+                        </p>
+
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <button class="btn btn-outline-primary">Mensaje</button>
+                          <a href="edit.html" class="btn btn-primary" style="color: #fff;">Editar</a>
+                        </div>
+                      </div>
+                      <div class="mt-4 py-2 border-top border-bottom">
+                        <ul class="nav profile-navbar">
+                          <li class="nav-item ">
+                            <a class="nav-link active" id="pills-info-tab" data-toggle="pill" href="#pills-info"
+                              role="tab" aria-controls="pills-info" aria-selected="true">
+                              <i class="mdi mdi-account-outline"></i>
+                              Info
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="pills-cursos-tab" data-toggle="pill" href="#pills-cursos" role="tab"
+                              aria-controls="pills-cursos" aria-selected="false">
+                              <i class="mdi mdi-book-open-page-variant"></i>
+                              Cursos
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="profile-feed">
+                        <div class="d-flex align-items-start profile-feed-item">
+                          <div class="col-md-12 col-xl-12 grid-margin ">
+                            <div class="tab-content" id="pills-tabContent">
+
+                              <div class="tab-pane fade show active" id="pills-info" role="tabpanel"
+                                aria-labelledby="pills-info-tab">
+                                <div class="media">
+                                  <div class="media-body">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <h5>Nombres</h5>
+                                      </div>
+                                      <div class="col-8">
+                                        <p>Maldonado Grey. V</p>
+                                      </div>
+
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <h5>Sexo</h5>
+                                      </div>
+                                      <div class="col-8">
+                                        <p>Masculino</p>
+                                      </div>
+
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <h5>Fecha de Nacimiento</h5>
+                                      </div>
+                                      <div class="col-8">
+                                        <p>13/04/2001</p>
+                                      </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <h5>Direccion</h5>
+                                      </div>
+                                      <div class="col-8">
+                                        <p>Av. Los Tallanes 234</p>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-cursos" role="tabpanel"
+                                aria-labelledby="pills-cursos-tab">
+                                <div class="media">
+
+                                  <div class="media-body">
+                                    <div class="row">
+                                      <div class="form-group mx-auto">
+                                        <select id="my-select" class="form-control" name="">
+                                          <option selected>2018</option>
+                                          <option>2017</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <table id="list-student-cursos" class="table">
+                                          <thead class="">
+                                            <tr>
+                                              <th>#</th>
+                                              <th>Nombre</th>
+                                              <th>Grupo</th>
+                                              <th>Puntaje</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>1</td>
+                                              <td> Ingles</td>
+                                              <td> Grupo 2</td>
+                                              <td>15</td>
+                                            </tr>
+                                            <tr>
+                                              <td>2</td>
+                                              <td>Ciencias Naturales</td>
+                                              <td> Grupo 2</td>
+                                              <td>20</td>
+                                            </tr>
+                                            <tr>
+                                              <td>3</td>
+                                              <td>Computacion</td>
+                                              <td>Grupo 1 </td>
+                                              <td>14</td>
+                                            </tr>
+                                            <tr>
+                                              <td>4</td>
+                                              <td> Educ. Fisica</td>
+                                              <td> Grupo 2</td>
+                                              <td><label class="badge badge-danger">8</label>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>5</td>
+                                              <td> Fisica</td>
+                                              <td> Grupo 2</td>
+                                              <td><label class="badge badge-danger">2</label>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>6</td>
+                                              <td> Religion</td>
+                                              <td>Grupo 1 </td>
+                                              <td>12</td>
+                                            </tr>
+                                            <tr>
+                                              <td>7</td>
+                                              <td>Comunicacion</td>
+                                              <td>Grupo 1 </td>
+                                              <td><label class="badge badge-danger">10</label>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>8</td>
+                                              <td> Tutoria</td>
+                                              <td>Grupo 1 </td>
+                                              <td><label class="badge badge-danger">10</label>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>9</td>
+                                              <td>Historia</td>
+                                              <td> Grupo 2</td>
+                                              <td>11</td>
+                                            </tr>
+                                            <tr>
+                                              <td>10</td>
+                                              <td>Educ. Arte</td>
+                                              <td>Grupo 1 </td>
+                                              <td>14</td>
+                                            </tr>
+                                            <tr>
+                                              <td>11</td>
+                                              <td>Danzas</td>
+                                              <td> Grupo 2</td>
+                                              <td>19</td>
+                                            </tr>
+                                          </tbody>
+
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer text-center">
+            <div class="w-100 clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a>Urbanui</a>. All rights reserved.</span>
+              <span class="d-none" >Theme Pro. License Estended by Alexander R.</span>
+            </div>
+          </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../js/off-canvas.js"></script>
+  <script src="../js/hoverable-collapse.js"></script>
+  <script src="../js/template.js"></script>
+  <script src="../js/settings.js"></script>
+  <script src="../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="../vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
+  <script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="../js/profile-demo.js"></script>
+  <!-- End custom js for this page-->
+  <script src="../js/data-table.js"></script>
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/samples/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:08 GMT -->
+
+</html>
