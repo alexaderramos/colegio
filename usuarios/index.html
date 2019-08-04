@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>IEP-ASIS</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../css/horizontal-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../images/favicon.png" />
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+        <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+            <div class="container">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="../index.html"><img src="../images/logo.svg"
+                            alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.svg"
+                            alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                                id="messageDropdown" href="#" data-toggle="dropdown">
+                                <i class="mdi mdi-email-outline mx-0"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="messageDropdown">
+                                <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face4.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            The meeting is cancelled
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            New product launch
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img src="../images/faces/face3.jpg" alt="image" class="profile-pic">
+                                    </div>
+                                    <div class="preview-item-content flex-grow">
+                                        <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                        </h6>
+                                        <p class="font-weight-light small-text text-muted mb-0">
+                                            Upcoming board meeting
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                                id="notificationDropdown" href="#" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline mx-0"></i>
+                                <span class="count"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="notificationDropdown">
+                                <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-success">
+                                            <i class="mdi mdi-information mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            Just now
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-warning">
+                                            <i class="mdi mdi-settings mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            Private message
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-info">
+                                            <i class="mdi mdi-account-box mx-0"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                        <p class="font-weight-light small-text mb-0 text-muted">
+                                            2 days ago
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-profile dropdown">
+                            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                                <img src="../images/faces/face5.jpg" alt="profile" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                                aria-labelledby="profileDropdown">
+                                <a class="dropdown-item" href="../login.html">
+                                    <i class="mdi mdi-logout"></i>
+                                    Salir
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                        data-toggle="horizontal-menu-toggle">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <nav class="bottom-navbar">
+            <div class="container">
+                <ul class="nav page-navigation">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">
+                            <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                            <span class="menu-title">Principal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mega-menu">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-airplay menu-icon"></i>
+                            <span class="menu-title">Gestion</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <div class="col-group-wrapper row">
+                                <div class="col-group col-md-4">
+                                    <p class="category-heading">MATRICULAS</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../matriculas/index.html">Ver
+                                                Todas</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="../matriculas/new.html">Registrar Matricula</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../matriculas/edit.html">Editar
+                                                Matricula</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-4">
+                                    <p class="category-heading">SEMESTRE</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../semestres/">Listar Semestres</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../semestres/new.html">Registrar
+                                                Semestre</a>
+                                        </li>
+                                    </ul>
+                                    <p class="category-heading">GRUPOS</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../grupos/">Listar Grupos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../grupos/new.html">Registrar
+                                                Grupo</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../grupos/edit.html">Editar
+                                            Grupo</a>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="col-group col-md-3">
+                                      
+                                    </div> -->
+                                <div class="col-group col-md-4">
+                                    <p class="category-heading">CURSOS</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../cursos/">Listar Cursos</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../cursos/new.html">Registrar
+                                                Curso</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../cursos/edit.html">Editar
+                                                Curso</a></li>
+
+                                    </ul>
+                                    <p class="category-heading">TALLERES</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../talleres/">Listar </a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../talleres/new.html">Registrar
+                                                Taller</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../talleres/edit.html">Editar
+                                            Taller</a></li>
+                                    </ul>
+                                </div>
+                               
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item mega-menu active">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-account-multiple menu-icon"></i>
+                            <span class="menu-title">Usuarios</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <div class="col-group-wrapper row">
+                                <div class="col-group col-md-4">
+                                    <p class="category-heading">USUARIOS</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item active"><a class="nav-link" href="../usuarios/index.html">Ver
+                                                Todos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                                Usuario</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                                Usuario</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-4">
+                                    <p class="category-heading">DOCENTES</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../docentes/">Listar Docentes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../docentes/new.html">Agregar Nuevo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../docentes/edit.html">Editar Docente</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-4">
+                                    <p class="category-heading">ALUMNOS</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../alumnos/index.html">Listar
+                                                Alumnos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../alumnos/new.html">Agregar
+                                                Nuevo</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../alumnos/edit.html">Editar
+                                                Alumno</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi mdi-account-card-details menu-icon"></i>
+                            <span class="menu-title">Personal</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../usuarios/index.html">Listar </a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                        Usuario</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                        Usuario</a></li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+                            <span class="menu-title">Docente</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../docentes/perfil.html">Mi Perfil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../docentes/mis-cursos.html">Mis Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="../docentes/mis-talleres.html">Mis Talleres</a>
+                                    </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-human-greeting menu-icon"></i>
+                            <span class="menu-title">Alumno</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="../alumnos/perfil.html">Mis Perfil</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="../alumnos/mis-cursos.html">Mis Cursos</a>
+                                    </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="../alumnos/mis-talleres.html">Mis Talleres</a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+              <!--       <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <span class="menu-title">Reportes</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item"><a class="nav-link" href="reportes/alumnos-rp.html">Reporte
+                                        Alumnos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="reportes/docentes-rp.html">
+                                        Reporte Docente</a></li>
+
+                            </ul>
+                        </div>
+                    </li> -->
+
+
+                    <li class="nav-item">
+                        <a href="../soporte/" class="nav-link">
+                            <i class="mdi mdi-information-outline menu-icon"></i>
+                            <span class="menu-title">Soporte</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">TODOS LOS USUARIOS</h4>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table id="list-users" class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>DNI</th>
+                          <th>Nombres</th>
+                          <th>Rol</th>
+                          <th>Estado</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                      <tr>
+                        <td id="id">1</td>
+                          <td id="dni">84618921</td>
+                        <td id="nombres">Grimes Herrera Quinlan</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">2</td>
+                          <td id="dni">64350245</td>
+                        <td id="nombres">Doyle Petty Ori</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">3</td>
+                          <td id="dni">42070068</td>
+                        <td id="nombres">Briggs Curtis Moses</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">4</td>
+                          <td id="dni">16678676</td>
+                        <td id="nombres">Mccullough Marks Kiara</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">5</td>
+                          <td id="dni">79991397</td>
+                        <td id="nombres">Cabrera Mcdonald Brianna</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">6</td>
+                          <td id="dni">88100047</td>
+                        <td id="nombres">Gross Lee Gil</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">7</td>
+                          <td id="dni">57441789</td>
+                        <td id="nombres">Stewart Durham Zahir</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">8</td>
+                          <td id="dni">56688775</td>
+                        <td id="nombres">Callahan Figueroa Beau</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">9</td>
+                          <td id="dni">29159224</td>
+                        <td id="nombres">White Johnson Vera</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">10</td>
+                          <td id="dni">21814307</td>
+                        <td id="nombres">Wong Jennings Brennan</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">11</td>
+                          <td id="dni">38449560</td>
+                        <td id="nombres">Compton Dudley Colorado</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">12</td>
+                          <td id="dni">90758504</td>
+                        <td id="nombres">Franklin Cantu Yoshio</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">13</td>
+                          <td id="dni">78869001</td>
+                        <td id="nombres">Michael Moran Iris</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">14</td>
+                          <td id="dni">23571116</td>
+                        <td id="nombres">Colon Blackwell Jena</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">15</td>
+                          <td id="dni">51843604</td>
+                        <td id="nombres">Little Knowles Ginger</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">16</td>
+                          <td id="dni">59709831</td>
+                        <td id="nombres">Ayala Potter Ahmed</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">17</td>
+                          <td id="dni">14464438</td>
+                        <td id="nombres">Knapp Day Joseph</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">18</td>
+                          <td id="dni">96108344</td>
+                        <td id="nombres">Clayton Burch Felicia</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">19</td>
+                          <td id="dni">69460161</td>
+                        <td id="nombres">Mclean Espinoza Armand</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">20</td>
+                          <td id="dni">35892678</td>
+                        <td id="nombres">Cabrera Dunn Nina</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">21</td>
+                          <td id="dni">76894049</td>
+                        <td id="nombres">Garcia Goodman Kerry</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">22</td>
+                          <td id="dni">38628114</td>
+                        <td id="nombres">Mathews Wong Plato</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">23</td>
+                          <td id="dni">81643853</td>
+                        <td id="nombres">Davis Stein Hedwig</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">24</td>
+                          <td id="dni">27930324</td>
+                        <td id="nombres">Sharpe Conley Charlotte</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">25</td>
+                          <td id="dni">79714287</td>
+                        <td id="nombres">Calhoun Pittman Lyle</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">26</td>
+                          <td id="dni">93348762</td>
+                        <td id="nombres">Randall Vega Howard</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">27</td>
+                          <td id="dni">21634552</td>
+                        <td id="nombres">Kent Parrish Dana</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">28</td>
+                          <td id="dni">67725033</td>
+                        <td id="nombres">Russo Bryan Sopoline</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">29</td>
+                          <td id="dni">80348614</td>
+                        <td id="nombres">Erickson Mccall Liberty</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">30</td>
+                          <td id="dni">68910728</td>
+                        <td id="nombres">Harris Carr Ava</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">31</td>
+                          <td id="dni">80380298</td>
+                        <td id="nombres">Herrera Whitehead Liberty</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">32</td>
+                          <td id="dni">45651490</td>
+                        <td id="nombres">Floyd Hahn Macy</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">33</td>
+                          <td id="dni">97250957</td>
+                        <td id="nombres">Mccarthy Chang Dillon</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">34</td>
+                          <td id="dni">88460366</td>
+                        <td id="nombres">Contreras Frost Mia</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">35</td>
+                          <td id="dni">69884852</td>
+                        <td id="nombres">Taylor Davenport Paki</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">36</td>
+                          <td id="dni">91204769</td>
+                        <td id="nombres">House Levy Dustin</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">37</td>
+                          <td id="dni">44708269</td>
+                        <td id="nombres">Weiss Sanchez Alec</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">38</td>
+                          <td id="dni">13769913</td>
+                        <td id="nombres">Nunez Hodges Nasim</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">39</td>
+                          <td id="dni">70829969</td>
+                        <td id="nombres">Cervantes Giles Micah</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">40</td>
+                          <td id="dni">93809337</td>
+                        <td id="nombres">Cobb Horn Nyssa</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">41</td>
+                          <td id="dni">65416296</td>
+                        <td id="nombres">Chapman Cooley Jason</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">42</td>
+                          <td id="dni">46072534</td>
+                        <td id="nombres">Dejesus Massey Katell</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">43</td>
+                          <td id="dni">10816554</td>
+                        <td id="nombres">Whitehead Hess Tatum</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">44</td>
+                          <td id="dni">17148973</td>
+                        <td id="nombres">Gray Cortez Sheila</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">45</td>
+                          <td id="dni">48749328</td>
+                        <td id="nombres">Stanley Boyer Diana</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">46</td>
+                          <td id="dni">35890670</td>
+                        <td id="nombres">Ferguson Shields Acton</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">47</td>
+                          <td id="dni">31893930</td>
+                        <td id="nombres">Mcgee Taylor Demetrius</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">48</td>
+                          <td id="dni">10500948</td>
+                        <td id="nombres">Briggs Flynn Reece</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">49</td>
+                          <td id="dni">75801585</td>
+                        <td id="nombres">Goodwin Cline Octavia</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">50</td>
+                          <td id="dni">43984814</td>
+                        <td id="nombres">William Wolf Cody</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">51</td>
+                          <td id="dni">58167791</td>
+                        <td id="nombres">Adams Bowers Ivory</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">52</td>
+                          <td id="dni">54219698</td>
+                        <td id="nombres">Shields Burton Rudyard</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">53</td>
+                          <td id="dni">82821326</td>
+                        <td id="nombres">Boyle Hatfield Orlando</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">54</td>
+                          <td id="dni">77019062</td>
+                        <td id="nombres">Good Vasquez Noelle</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">55</td>
+                          <td id="dni">74357312</td>
+                        <td id="nombres">Jacobs Mclean Leonard</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">56</td>
+                          <td id="dni">58018386</td>
+                        <td id="nombres">Paul Valdez Tarik</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">57</td>
+                          <td id="dni">35819398</td>
+                        <td id="nombres">Potts Meadows Charde</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">58</td>
+                          <td id="dni">77813901</td>
+                        <td id="nombres">Mendez Montgomery Alexa</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">59</td>
+                          <td id="dni">59554444</td>
+                        <td id="nombres">Terry Roy Jayme</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">60</td>
+                          <td id="dni">67245463</td>
+                        <td id="nombres">Bishop Lott Emi</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">61</td>
+                          <td id="dni">25761458</td>
+                        <td id="nombres">Emerson Hoover Buffy</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">62</td>
+                          <td id="dni">64424580</td>
+                        <td id="nombres">Montoya Chambers Fitzgerald</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">63</td>
+                          <td id="dni">66167872</td>
+                        <td id="nombres">Scott Barron Chelsea</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">64</td>
+                          <td id="dni">75027999</td>
+                        <td id="nombres">Graham Moran Avram</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">65</td>
+                          <td id="dni">56342313</td>
+                        <td id="nombres">Garner Lambert Amery</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">66</td>
+                          <td id="dni">19311114</td>
+                        <td id="nombres">Hogan Alston Tamekah</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">67</td>
+                          <td id="dni">40906867</td>
+                        <td id="nombres">Oneill Hubbard Felix</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">68</td>
+                          <td id="dni">27341961</td>
+                        <td id="nombres">Hale Wheeler Stuart</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">69</td>
+                          <td id="dni">50019488</td>
+                        <td id="nombres">Simmons Pratt Amelia</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">70</td>
+                          <td id="dni">11563804</td>
+                        <td id="nombres">Gilliam Giles Maxwell</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">71</td>
+                          <td id="dni">76170110</td>
+                        <td id="nombres">Noel Townsend Malcolm</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">72</td>
+                          <td id="dni">47444774</td>
+                        <td id="nombres">Poole Weeks Raja</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">73</td>
+                          <td id="dni">29365741</td>
+                        <td id="nombres">Hopkins Strickland Jayme</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">74</td>
+                          <td id="dni">38034847</td>
+                        <td id="nombres">Aguirre Mcpherson Giselle</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">75</td>
+                          <td id="dni">80522196</td>
+                        <td id="nombres">Kramer Diaz Debra</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">76</td>
+                          <td id="dni">54268847</td>
+                        <td id="nombres">Briggs Tyson Yetta</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">77</td>
+                          <td id="dni">28191017</td>
+                        <td id="nombres">Mclaughlin Castro Dillon</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">78</td>
+                          <td id="dni">47301016</td>
+                        <td id="nombres">Cross Barton Desiree</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">79</td>
+                          <td id="dni">30401597</td>
+                        <td id="nombres">Gilbert Lamb Chase</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">80</td>
+                          <td id="dni">48473905</td>
+                        <td id="nombres">Leonard Zamora Lester</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">81</td>
+                          <td id="dni">44516145</td>
+                        <td id="nombres">Mcfadden Everett Caleb</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">82</td>
+                          <td id="dni">98578167</td>
+                        <td id="nombres">Bullock York Yuri</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">83</td>
+                          <td id="dni">35576030</td>
+                        <td id="nombres">Nelson Beard Rogan</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">84</td>
+                          <td id="dni">25327466</td>
+                        <td id="nombres">Dixon Gregory Ora</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">85</td>
+                          <td id="dni">47820062</td>
+                        <td id="nombres">Mason Lindsey Uriel</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">86</td>
+                          <td id="dni">34043529</td>
+                        <td id="nombres">Mays Church Lila</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">87</td>
+                          <td id="dni">10731083</td>
+                        <td id="nombres">Forbes Bowers Vivien</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">88</td>
+                          <td id="dni">33044707</td>
+                        <td id="nombres">Olson Blake Charlotte</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">89</td>
+                          <td id="dni">25290083</td>
+                        <td id="nombres">Kennedy Guzman Gannon</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">90</td>
+                          <td id="dni">56940922</td>
+                        <td id="nombres">Cherry Simpson Montana</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">91</td>
+                          <td id="dni">52301586</td>
+                        <td id="nombres">Griffith Hooper Steel</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">92</td>
+                          <td id="dni">90951381</td>
+                        <td id="nombres">Downs Cleveland September</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">93</td>
+                          <td id="dni">78617474</td>
+                        <td id="nombres">Small Reed Melinda</td>
+                        <td id="rol">Alumno</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">94</td>
+                          <td id="dni">27376829</td>
+                        <td id="nombres">Diaz Oliver Dominic</td>
+                        <td id="rol">Docente</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">95</td>
+                          <td id="dni">71390604</td>
+                        <td id="nombres">Snider Lamb Jessica</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">96</td>
+                          <td id="dni">29984814</td>
+                        <td id="nombres">Matthews Moore Indira</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">97</td>
+                          <td id="dni">40328664</td>
+                        <td id="nombres">Mercado Blake Skyler</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">98</td>
+                          <td id="dni">15516757</td>
+                        <td id="nombres">Newton Serrano Iliana</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">99</td>
+                          <td id="dni">45225491</td>
+                        <td id="nombres">Villarreal Blanchard Judah</td>
+                        <td id="rol">Administrador</td>
+                        <td id="estado" ><label class="badge badge-danger">Deshabilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      <tr>
+                        <td id="id">100</td>
+                          <td id="dni">30128586</td>
+                        <td id="nombres">Mcconnell Michael Ross</td>
+                        <td id="rol">Secretaria</td>
+                        <td id="estado" ><label class="badge badge-success">Habilitado</label></td>
+                        <td id="action" > <a href="javascript:void(0)" class="btn btn-outline-primary seeUser">Ver</a></td>
+                        
+                      
+                      </tr>
+                      
+                    </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+
+
+
+        <!-- Modal Ends -->
+
+        <!-- partial -->
+      </div>
+      <div class="modal fade" id="mostrarUsuario" tabindex="-1" role="dialog" aria-labelledby="mostrarUsuarioLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="mostrarUsuarioLabel">DATOS DE USUARIO</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <h5>DNI</h5>
+                <spam id="dni">Nombre</spam>
+              </p>
+              <p>
+                <h5>Nombres</h5>
+                <spam id="nombres">Nombre</spam>
+              </p>
+              <p>
+                <h5>Rol</h5>
+                <spam id="rol">Nombre</spam>
+              </p>
+              <p>
+                  <h5>Estado</h5>
+                  <spam id="estado">Nombre</spam>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn eliminar btn-outline-danger mr-auto">Eliminar</button>
+                <a href="edit.html" class="btn btn-warning" >Editar</a>
+              <!-- <button type="button" class="btn btn-warning">Editar</button> -->
+              <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- partial:../../partials/_footer.html -->
+      <footer class="footer text-center">
+        <div class="w-100 clearfix">
+          <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a>Urbanui</a>.
+            All rights reserved.</span>
+          <span class="d-none">Theme Pro. License Estended by Alexander R.</span>
+        </div>
+      </footer>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../js/off-canvas.js"></script>
+  <script src="../js/hoverable-collapse.js"></script>
+  <script src="../js/template.js"></script>
+  <script src="../js/settings.js"></script>
+  <script src="../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="../js/data-table.js"></script>
+  <!-- End custom js for this page-->
+  <script src="../js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+</html>

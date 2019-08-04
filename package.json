@@ -1,0 +1,11 @@
+{
+  "name": "colegio",
+  "version": "1.0.0",
+  "description": "Intefaz para colegio IE Asis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Esta es un prueba"
+  },
+  "author": "Alexander R.",
+  "license": "ISC"
+}

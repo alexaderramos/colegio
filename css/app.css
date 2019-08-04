@@ -1,0 +1,53 @@
+.horizontal-menu .bottom-navbar .page-navigation>.nav-item .submenu ul li a:hover {
+    color: #FFF;
+    background-color: #7571f9;
+    -webkit-transition: color 0.1s linear;
+    -moz-transition: color 0.1s linear;
+    -ms-transition: color 0.1s linear;
+    -o-transition: color 0.1s linear;
+    transition: color 0.1s linear;
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+}
+
+.horizontal-menu .bottom-navbar .page-navigation>.nav-item .submenu ul li.active a {
+    color: #FFF;
+    background-color: #7571f9;
+}
+
+.btn.btn-warning {
+    color: #fff;
+}
+
+.btn.btn-outline-warning:hover {
+    color: #fff;
+}
+
+.card .card-header, .card .card-footer {
+    padding: 1px 1px;
+    cursor: pointer;
+}
+
+.danger-red {
+    background-color: red;
+}
+
+.prom {
+    background-color: #7571f9;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .horizontal-menu .bottom-navbar .page-navigation>.nav-item:not(.mega-menu) .submenu {
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    }
+    .horizontal-menu .bottom-navbar .page-navigation > .nav-item.mega-menu .submenu {
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+
+

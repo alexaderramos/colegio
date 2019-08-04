@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IEP-ASIS</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../css/horizontal-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_horizontal-navbar.html -->
+        <div class="horizontal-menu">
+                <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+                    <div class="container">
+                        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                            <a class="navbar-brand brand-logo" href="../index.html"><img src="../images/logo.svg"
+                                    alt="logo" /></a>
+                            <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.svg"
+                                    alt="logo" /></a>
+                        </div>
+                        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+    
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                                        id="messageDropdown" href="#" data-toggle="dropdown">
+                                        <i class="mdi mdi-email-outline mx-0"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                        aria-labelledby="messageDropdown">
+                                        <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="../images/faces/face4.jpg" alt="image" class="profile-pic">
+                                            </div>
+                                            <div class="preview-item-content flex-grow">
+                                                <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                                </h6>
+                                                <p class="font-weight-light small-text text-muted mb-0">
+                                                    The meeting is cancelled
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="../images/faces/face2.jpg" alt="image" class="profile-pic">
+                                            </div>
+                                            <div class="preview-item-content flex-grow">
+                                                <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                                </h6>
+                                                <p class="font-weight-light small-text text-muted mb-0">
+                                                    New product launch
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="../images/faces/face3.jpg" alt="image" class="profile-pic">
+                                            </div>
+                                            <div class="preview-item-content flex-grow">
+                                                <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                                </h6>
+                                                <p class="font-weight-light small-text text-muted mb-0">
+                                                    Upcoming board meeting
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                                        id="notificationDropdown" href="#" data-toggle="dropdown">
+                                        <i class="mdi mdi-bell-outline mx-0"></i>
+                                        <span class="count"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                        aria-labelledby="notificationDropdown">
+                                        <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-success">
+                                                    <i class="mdi mdi-information mx-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                                <p class="font-weight-light small-text mb-0 text-muted">
+                                                    Just now
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-warning">
+                                                    <i class="mdi mdi-settings mx-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                                <p class="font-weight-light small-text mb-0 text-muted">
+                                                    Private message
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-info">
+                                                    <i class="mdi mdi-account-box mx-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                                <p class="font-weight-light small-text mb-0 text-muted">
+                                                    2 days ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-profile dropdown">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                                        <img src="../images/faces/face5.jpg" alt="profile" />
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                                        aria-labelledby="profileDropdown">
+                                        <a class="dropdown-item" href="../login.html">
+                                            <i class="mdi mdi-logout"></i>
+                                            Salir
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                                data-toggle="horizontal-menu-toggle">
+                                <span class="mdi mdi-menu"></span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="bottom-navbar">
+                    <div class="container">
+                        <ul class="nav page-navigation">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../index.html">
+                                    <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                                    <span class="menu-title">Principal</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mega-menu active">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-airplay menu-icon"></i>
+                                    <span class="menu-title">Gestion</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <div class="col-group-wrapper row">
+                                        <div class="col-group col-md-4">
+                                            <p class="category-heading">MATRICULAS</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../matriculas/index.html">Ver
+                                                        Todas</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                        href="../matriculas/new.html">Registrar Matricula</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../matriculas/edit.html">Editar
+                                                        Matricula</a></li>
+    
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-4">
+                                            <p class="category-heading">SEMESTRE</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../semestres/">Listar Semestres</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../semestres/new.html">Registrar
+                                                        Semestre</a>
+                                                </li>
+                                            </ul>
+                                            <p class="category-heading">GRUPOS</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../grupos/">Listar Grupos</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../grupos/new.html">Registrar
+                                                        Grupo</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../grupos/edit.html">Editar
+                                                    Grupo</a>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="col-group col-md-3">
+                                              
+                                            </div> -->
+                                        <div class="col-group col-md-4">
+                                            <p class="category-heading">CURSOS</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../cursos/">Listar Cursos</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../cursos/new.html">Registrar
+                                                        Curso</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../cursos/edit.html">Editar
+                                                        Curso</a></li>
+    
+                                            </ul>
+                                            <p class="category-heading">TALLERES</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../talleres/">Listar </a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../talleres/new.html">Registrar
+                                                        Taller</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="../talleres/edit.html">Editar
+                                                    Taller</a></li>
+                                            </ul>
+                                        </div>
+                                       
+    
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item mega-menu">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-account-multiple menu-icon"></i>
+                                    <span class="menu-title">Usuarios</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <div class="col-group-wrapper row">
+                                        <div class="col-group col-md-4">
+                                            <p class="category-heading">USUARIOS</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../usuarios/index.html">Ver
+                                                        Todos</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                                        Usuario</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                                        Usuario</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-4">
+                                            <p class="category-heading">DOCENTES</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="../docentes/">Listar Docentes</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="../docentes/new.html">Agregar Nuevo</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="../docentes/edit.html">Editar Docente</a>
+                                                </li>
+    
+                                            </ul>
+                                        </div>
+                                        <div class="col-group col-md-4">
+                                            <p class="category-heading">ALUMNOS</p>
+                                            <ul class="submenu-item">
+                                                <li class="nav-item"><a class="nav-link" href="../alumnos/index.html">Listar
+                                                        Alumnos</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../alumnos/new.html">Agregar
+                                                        Nuevo</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../alumnos/edit.html">Editar
+                                                        Alumno</a></li>
+    
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <!-- <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi mdi-account-card-details menu-icon"></i>
+                                    <span class="menu-title">Personal</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/index.html">Listar </a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/new.html">Registrar
+                                                Usuario</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="../usuarios/edit.html">Editar
+                                                Usuario</a></li>
+                                    </ul>
+                                </div>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+                                    <span class="menu-title">Docente</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../docentes/perfil.html">Mi Perfil</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../docentes/mis-cursos.html">Mis Cursos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../docentes/mis-talleres.html">Mis Talleres</a>
+                                            </li>
+    
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-human-greeting menu-icon"></i>
+                                    <span class="menu-title">Alumno</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="../alumnos/perfil.html">Mis Perfil</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../alumnos/mis-cursos.html">Mis Cursos</a>
+                                            </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../alumnos/mis-talleres.html">Mis Talleres</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                      <!--       <li class="nav-item">
+                                <a href="#!" class="nav-link">
+                                    <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                                    <span class="menu-title">Reportes</span>
+                                    <i class="menu-arrow"></i></a>
+                                <div class="submenu">
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="reportes/alumnos-rp.html">Reporte
+                                                Alumnos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="reportes/docentes-rp.html">
+                                                Reporte Docente</a></li>
+    
+                                    </ul>
+                                </div>
+                            </li> -->
+    
+    
+                            <li class="nav-item">
+                                <a href="../soporte/" class="nav-link">
+                                    <i class="mdi mdi-information-outline menu-icon"></i>
+                                    <span class="menu-title">Soporte</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+                <div class="content-wrapper">
+                        <div class="card">
+                                <div class="card-body text-center">
+        
+                                    <h3 class="card-title" style="font-size: 2em">SEMESTRE: 2019</h3>
+                                    <p class="card-text">
+                                        # Cursos: 100 <br>
+                                        Fecha Inicio: 03/03/2019 <br>
+                                        Fecha Fin: 20/12/2019 <br>
+                                    </p>
+        
+                                </div>
+                            </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h4 class="card-title">CURSOS DEL PROGRAMADOS</h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table id="list-semestre-show" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>COD</th>
+                                                    <th>NOMBRE</th>
+                                                    <th>DOCENTE</th>
+                                                    <th>GRUPO</th>
+                                                    <th>DURACION</th>
+                                                    <th>CAPACIDAD</th>
+                                                    <th>ESTADO</th>
+                                                    <th>ACCIONES</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>CUR-1</td>
+                                                    <td>Danzas</td>
+                                                    <td>Byers Harris Indigo</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>41</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>CUR-2</td>
+                                                    <td>Religion</td>
+                                                    <td>Burton Edwards Nasim</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>23</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>CUR-3</td>
+                                                    <td>Sociales</td>
+                                                    <td>Faulkner Mclaughlin Gay</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>3</td>
+                                                    <td>29</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>CUR-4</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Workman Swanson Audra</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>33</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>CUR-5</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Barry Cardenas Hall</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>3</td>
+                                                    <td>20</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>CUR-6</td>
+                                                    <td>Religion</td>
+                                                    <td>Henderson Leblanc India</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>45</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>CUR-7</td>
+                                                    <td>Sociales</td>
+                                                    <td>Holloway Melendez Melvin</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>20</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>CUR-8</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Carney Flores Beck</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>4</td>
+                                                    <td>28</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>CUR-9</td>
+                                                    <td>Religion</td>
+                                                    <td>Davidson Kerr Brady</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>39</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>CUR-10</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Swanson Morris Dominic</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>5</td>
+                                                    <td>29</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>CUR-11</td>
+                                                    <td>Danzas</td>
+                                                    <td>Hines Molina Cherokee</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>40</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>CUR-12</td>
+                                                    <td>Sociales</td>
+                                                    <td>Reed Noel Demetrius</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>CUR-13</td>
+                                                    <td>Fisica</td>
+                                                    <td>Vang Glenn Lavinia</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>39</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>CUR-14</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Hebert Gregory Rowan</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>20</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>CUR-15</td>
+                                                    <td>Danzas</td>
+                                                    <td>Ayala Velazquez Ebony</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>23</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>CUR-16</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Bird Becker Cruz</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>2</td>
+                                                    <td>30</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>CUR-17</td>
+                                                    <td>Fisica</td>
+                                                    <td>Taylor Cohen Harper</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>39</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>CUR-18</td>
+                                                    <td>Matematica</td>
+                                                    <td>Saunders Norton Hilel</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>5</td>
+                                                    <td>21</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>CUR-19</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Ryan Baxter Lois</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>34</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>CUR-20</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Willis Watson Signe</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>43</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>CUR-21</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Mckee Crosby Sybil</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>2</td>
+                                                    <td>38</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>CUR-22</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Steele Joyce Ebony</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>2</td>
+                                                    <td>41</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23</td>
+                                                    <td>CUR-23</td>
+                                                    <td>Fisica</td>
+                                                    <td>Charles York Cally</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>27</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24</td>
+                                                    <td>CUR-24</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Randolph Estrada Aline</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>3</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25</td>
+                                                    <td>CUR-25</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Kerr Burton Anjolie</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>23</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>CUR-26</td>
+                                                    <td>Religion</td>
+                                                    <td>Neal William Ila</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>38</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>27</td>
+                                                    <td>CUR-27</td>
+                                                    <td>Matematica</td>
+                                                    <td>Lott Hubbard Hyatt</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>5</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>CUR-28</td>
+                                                    <td>Danzas</td>
+                                                    <td>Blackwell Clayton William</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>28</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>CUR-29</td>
+                                                    <td>Sociales</td>
+                                                    <td>Rosario Daniel Owen</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>40</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30</td>
+                                                    <td>CUR-30</td>
+                                                    <td>Matematica</td>
+                                                    <td>Clay Moon Michael</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>2</td>
+                                                    <td>23</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>31</td>
+                                                    <td>CUR-31</td>
+                                                    <td>Matematica</td>
+                                                    <td>Rodriquez Martin Lilah</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>28</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>32</td>
+                                                    <td>CUR-32</td>
+                                                    <td>Matematica</td>
+                                                    <td>Baird Singleton Jemima</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>2</td>
+                                                    <td>34</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>33</td>
+                                                    <td>CUR-33</td>
+                                                    <td>Religion</td>
+                                                    <td>Richard Norman Allen</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>44</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>34</td>
+                                                    <td>CUR-34</td>
+                                                    <td>Danzas</td>
+                                                    <td>Pickett Coleman Linus</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>3</td>
+                                                    <td>28</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>35</td>
+                                                    <td>CUR-35</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Fox Scott Rudyard</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>3</td>
+                                                    <td>42</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>36</td>
+                                                    <td>CUR-36</td>
+                                                    <td>Danzas</td>
+                                                    <td>Brown Avery Anne</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>29</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>37</td>
+                                                    <td>CUR-37</td>
+                                                    <td>Sociales</td>
+                                                    <td>Hanson Molina Laura</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>41</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>38</td>
+                                                    <td>CUR-38</td>
+                                                    <td>Religion</td>
+                                                    <td>Tillman Coffey Ivor</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>27</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>39</td>
+                                                    <td>CUR-39</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Chapman Spence Lael</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>37</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>40</td>
+                                                    <td>CUR-40</td>
+                                                    <td>Danzas</td>
+                                                    <td>Robles English Nissim</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>5</td>
+                                                    <td>41</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>41</td>
+                                                    <td>CUR-41</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Osborn Dawson Cullen</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>3</td>
+                                                    <td>25</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>42</td>
+                                                    <td>CUR-42</td>
+                                                    <td>Danzas</td>
+                                                    <td>Conrad Conley Ursula</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>5</td>
+                                                    <td>20</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>43</td>
+                                                    <td>CUR-43</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Harrell Brown Finn</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>44</td>
+                                                    <td>CUR-44</td>
+                                                    <td>Religion</td>
+                                                    <td>Bradshaw Mcknight William</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>3</td>
+                                                    <td>22</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>45</td>
+                                                    <td>CUR-45</td>
+                                                    <td>Sociales</td>
+                                                    <td>Brewer Giles Fay</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>3</td>
+                                                    <td>30</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>46</td>
+                                                    <td>CUR-46</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Gonzalez Cotton Maris</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>37</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>47</td>
+                                                    <td>CUR-47</td>
+                                                    <td>Danzas</td>
+                                                    <td>Roberson Small Ruth</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>2</td>
+                                                    <td>41</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>48</td>
+                                                    <td>CUR-48</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Nieves Duran Callie</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>2</td>
+                                                    <td>28</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>49</td>
+                                                    <td>CUR-49</td>
+                                                    <td>Fisica</td>
+                                                    <td>Talley Trujillo Shana</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>2</td>
+                                                    <td>45</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50</td>
+                                                    <td>CUR-50</td>
+                                                    <td>Sociales</td>
+                                                    <td>Montoya Bernard Austin</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>2</td>
+                                                    <td>26</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>51</td>
+                                                    <td>CUR-51</td>
+                                                    <td>Fisica</td>
+                                                    <td>Ellis Allen Renee</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>44</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>52</td>
+                                                    <td>CUR-52</td>
+                                                    <td>Matematica</td>
+                                                    <td>Morgan Cross Wing</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>27</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>53</td>
+                                                    <td>CUR-53</td>
+                                                    <td>Fisica</td>
+                                                    <td>Ross Walker Mallory</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>54</td>
+                                                    <td>CUR-54</td>
+                                                    <td>Danzas</td>
+                                                    <td>Farley Leblanc Hiroko</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>23</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>55</td>
+                                                    <td>CUR-55</td>
+                                                    <td>Fisica</td>
+                                                    <td>Garza Webster Oren</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>29</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>56</td>
+                                                    <td>CUR-56</td>
+                                                    <td>Matematica</td>
+                                                    <td>Hughes Parker Robert</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>2</td>
+                                                    <td>36</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>57</td>
+                                                    <td>CUR-57</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Park Banks Stewart</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>30</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>58</td>
+                                                    <td>CUR-58</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Bond Griffin Ezekiel</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>2</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>59</td>
+                                                    <td>CUR-59</td>
+                                                    <td>Danzas</td>
+                                                    <td>Ramos Dean Brenna</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>2</td>
+                                                    <td>35</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>60</td>
+                                                    <td>CUR-60</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Bonner Farrell Harding</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>2</td>
+                                                    <td>38</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>61</td>
+                                                    <td>CUR-61</td>
+                                                    <td>Religion</td>
+                                                    <td>Benton Arnold Orlando</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>4</td>
+                                                    <td>22</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>62</td>
+                                                    <td>CUR-62</td>
+                                                    <td>Matematica</td>
+                                                    <td>Nolan Roth Charlotte</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>37</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>63</td>
+                                                    <td>CUR-63</td>
+                                                    <td>Religion</td>
+                                                    <td>Perry Bonner Kirk</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>2</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>64</td>
+                                                    <td>CUR-64</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Byers Mcgee Colin</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>40</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>65</td>
+                                                    <td>CUR-65</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Newman Sanchez Alana</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>42</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>66</td>
+                                                    <td>CUR-66</td>
+                                                    <td>Danzas</td>
+                                                    <td>Chavez Ford Ocean</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>25</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>67</td>
+                                                    <td>CUR-67</td>
+                                                    <td>Danzas</td>
+                                                    <td>Knight Ferguson Uriel</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>44</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>68</td>
+                                                    <td>CUR-68</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Mayer Savage Cara</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>5</td>
+                                                    <td>30</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>69</td>
+                                                    <td>CUR-69</td>
+                                                    <td>Sociales</td>
+                                                    <td>Mcmillan Mendoza Dakota</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>22</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>70</td>
+                                                    <td>CUR-70</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Key Schultz Katell</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>5</td>
+                                                    <td>27</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>71</td>
+                                                    <td>CUR-71</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Reynolds Burke Connor</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>2</td>
+                                                    <td>20</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>72</td>
+                                                    <td>CUR-72</td>
+                                                    <td>Fisica</td>
+                                                    <td>Mayer Dominguez Shellie</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>4</td>
+                                                    <td>20</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>73</td>
+                                                    <td>CUR-73</td>
+                                                    <td>Matematica</td>
+                                                    <td>Stone Kim Brielle</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>3</td>
+                                                    <td>25</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>74</td>
+                                                    <td>CUR-74</td>
+                                                    <td>Matematica</td>
+                                                    <td>Peters Blair Ina</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>3</td>
+                                                    <td>42</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>75</td>
+                                                    <td>CUR-75</td>
+                                                    <td>Matematica</td>
+                                                    <td>Bates Knapp TaShya</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>2</td>
+                                                    <td>31</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>76</td>
+                                                    <td>CUR-76</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Schultz Clements Wilma</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>2</td>
+                                                    <td>28</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>77</td>
+                                                    <td>CUR-77</td>
+                                                    <td>Sociales</td>
+                                                    <td>Waters Mccray Bruno</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>25</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>78</td>
+                                                    <td>CUR-78</td>
+                                                    <td>Sociales</td>
+                                                    <td>Pollard Suarez Ora</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>2</td>
+                                                    <td>29</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>79</td>
+                                                    <td>CUR-79</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Russo Wall Forrest</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>23</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>80</td>
+                                                    <td>CUR-80</td>
+                                                    <td>Religion</td>
+                                                    <td>Palmer Larson Emily</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>29</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>81</td>
+                                                    <td>CUR-81</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Harrell Brooks Cruz</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>41</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>82</td>
+                                                    <td>CUR-82</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Austin Allen Cadman</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>35</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>83</td>
+                                                    <td>CUR-83</td>
+                                                    <td>Danzas</td>
+                                                    <td>Haley Campos Quincy</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>84</td>
+                                                    <td>CUR-84</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Conrad Galloway Hedwig</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>30</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>85</td>
+                                                    <td>CUR-85</td>
+                                                    <td>Danzas</td>
+                                                    <td>Coffey Williamson Emerson</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>2</td>
+                                                    <td>39</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>86</td>
+                                                    <td>CUR-86</td>
+                                                    <td>Fisica</td>
+                                                    <td>Melton Garner Faith</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>5</td>
+                                                    <td>35</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>87</td>
+                                                    <td>CUR-87</td>
+                                                    <td>Sociales</td>
+                                                    <td>Justice Horton Laurel</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>2</td>
+                                                    <td>37</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>88</td>
+                                                    <td>CUR-88</td>
+                                                    <td>Fisica</td>
+                                                    <td>Valentine Coleman Boris</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>2</td>
+                                                    <td>36</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>89</td>
+                                                    <td>CUR-89</td>
+                                                    <td>Religion</td>
+                                                    <td>Beach English Dennis</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>4</td>
+                                                    <td>45</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>90</td>
+                                                    <td>CUR-90</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Berry Sharpe Dillon</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>29</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>91</td>
+                                                    <td>CUR-91</td>
+                                                    <td>Danzas</td>
+                                                    <td>Solomon Ashley Benjamin</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>2</td>
+                                                    <td>38</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>92</td>
+                                                    <td>CUR-92</td>
+                                                    <td>Matematica</td>
+                                                    <td>Benjamin Rosa Colby</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>3</td>
+                                                    <td>39</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>93</td>
+                                                    <td>CUR-93</td>
+                                                    <td>Danzas</td>
+                                                    <td>Mccormick Knapp Gail</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>5</td>
+                                                    <td>42</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>94</td>
+                                                    <td>CUR-94</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Davidson Miranda Tamekah</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>3</td>
+                                                    <td>31</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>95</td>
+                                                    <td>CUR-95</td>
+                                                    <td>Tutoria</td>
+                                                    <td>Bray Kemp Flynn</td>
+                                                    <td>GRUPO-1</td>
+                                                    <td>5</td>
+                                                    <td>32</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>96</td>
+                                                    <td>CUR-96</td>
+                                                    <td>PF y RRHH</td>
+                                                    <td>Bass Juarez Otto</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>3</td>
+                                                    <td>28</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>97</td>
+                                                    <td>CUR-97</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Goff Garza Whoopi</td>
+                                                    <td>GRUPO-3</td>
+                                                    <td>2</td>
+                                                    <td>40</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>98</td>
+                                                    <td>CUR-98</td>
+                                                    <td>Danzas</td>
+                                                    <td>Wong Young Samuel</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>23</td>
+                                                    <td><label class="badge badge-success">Habilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>99</td>
+                                                    <td>CUR-99</td>
+                                                    <td>Religion</td>
+                                                    <td>Finley Yang Kaseem</td>
+                                                    <td>GRUPO-2</td>
+                                                    <td>4</td>
+                                                    <td>44</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>100</td>
+                                                    <td>CUR-100</td>
+                                                    <td>Comunicacion</td>
+                                                    <td>Wilder Holcomb Edan</td>
+                                                    <td>GRUPO-4</td>
+                                                    <td>2</td>
+                                                    <td>44</td>
+                                                    <td><label class="badge badge-danger">Deshabilitado</label></td>
+                                                    <td><a href="../cursos/show.html"
+                                                            class="btn btn-outline-primary">Ver</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:../../partials/_footer.html -->
+                <footer class="footer text-center">
+                    <div class="w-100 clearfix">
+                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019
+                            <a>Urbanui</a>. All rights reserved.</span>
+                        <span class="d-none">Theme Pro. License Estended by Alexander R.</span>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- base:js -->
+    <script src="../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../js/off-canvas.js"></script>
+    <script src="../js/hoverable-collapse.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/settings.js"></script>
+    <script src="../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="../vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <script src="../js/data-table.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/yoraui/template/demo/horizontal-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2019 00:02:07 GMT -->
+
+</html>
