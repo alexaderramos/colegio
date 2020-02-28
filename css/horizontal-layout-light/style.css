@@ -29087,6 +29087,10 @@ div.tagsinput span.tag a {
   background: url("../../images/auth/login-bg.jpg");
   background-size: cover;
 }
+.auth .login-half-bg2 {
+  background: url("../../images/auth/login-bg2.jpg");
+  background-size: cover;
+}
 
 .auth .register-half-bg {
   background: url("../../images/auth/register-bg.jpg");
